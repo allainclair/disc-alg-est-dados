@@ -1,0 +1,554 @@
+
+<!DOCTYPE doctype html>
+
+<html class="no-js" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="Disciplina algoritmos e estruturas de dados" name="description"/>
+<link href="https://github.com/allainclair/" rel="canonical"/>
+<meta content="Allainclair Flausino dos Santos" name="author"/>
+<meta content="Copiar para área de transferência" name="lang:clipboard.copy"/>
+<meta content="Copiado para área de transferência" name="lang:clipboard.copied"/>
+<meta content="en, pt" name="lang:search.language"/>
+<meta content="True" name="lang:search.pipeline.stopwords"/>
+<meta content="True" name="lang:search.pipeline.trimmer"/>
+<meta content="Nenhum resultado encontrado" name="lang:search.result.none"/>
+<meta content="1 resultado encontrado" name="lang:search.result.one"/>
+<meta content="# resultados encontrados" name="lang:search.result.other"/>
+<meta content="[\s\-]+" name="lang:search.tokenizer"/>
+<link href="assets/images/favicon.png" rel="shortcut icon"/>
+<meta content="mkdocs-1.0.4, mkdocs-material-4.1.1" name="generator"/>
+<title>Algoritmos e estruturas de dados</title>
+<link href="assets/stylesheets/application.3020aac5.css" rel="stylesheet"/>
+<script src="assets/javascripts/modernizr.01ccdecf.js"></script>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+<link href="assets/fonts/material-icons.css" rel="stylesheet"/>
+</head>
+<body dir="ltr">
+<svg class="md-svg">
+<defs>
+</defs>
+</svg>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+<a class="md-skip" href="#disciplina-algoritmos-e-estrutura-de-dados" tabindex="1">
+        Ir para o conteúdo
+      </a>
+<header class="md-header" data-md-component="header">
+<nav class="md-header-nav md-grid">
+<div class="md-flex">
+<div class="md-flex__cell md-flex__cell--shrink">
+<a class="md-header-nav__button md-logo" href="https://github.com/allainclair" title="Algoritmos e estruturas de dados">
+<i class="md-icon"></i>
+</a>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch">
+<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+<span class="md-header-nav__topic">
+              Algoritmos e estruturas de dados
+            </span>
+<span class="md-header-nav__topic">
+              Introdução
+            </span>
+</div>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="query" data-md-state="active" name="query" placeholder="Buscar" spellcheck="false" type="text"/>
+<label class="md-icon md-search__icon" for="__search"></label>
+<button class="md-icon md-search__icon" data-md-component="reset" tabindex="-1" type="reset">
+        
+      </button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="result">
+<div class="md-search-result__meta">
+            Digite para iniciar a busca
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container">
+<main class="md-main">
+<div class="md-main__inner md-grid" data-md-component="container">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title md-nav__title--site" for="__drawer">
+<a class="md-nav__button md-logo" href="https://github.com/allainclair" title="Algoritmos e estruturas de dados">
+<i class="md-icon"></i>
+</a>
+    Algoritmos e estruturas de dados
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        Introdução
+      </label>
+<a class="md-nav__link md-nav__link--active" href="." title="Introdução">
+      Introdução
+    </a>
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Índice</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#professor" title="Professor">
+    Professor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#disciplina" title="Disciplina">
+    Disciplina
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#avaliacao-projeto" title="Avaliação (projeto)">
+    Avaliação (projeto)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ementa" title="Ementa">
+    Ementa
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#objetivos" title="Objetivos">
+    Objetivos
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conteudo-programatico" title="Conteúdo programático">
+    Conteúdo programático
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#referencias" title="Referências">
+    Referências
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cronograma" title="Cronograma">
+    Cronograma
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#calendario" title="Calendário">
+    Calendário
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aulasprovas" title="Aulas/Provas">
+    Aulas/Provas
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#abril" title="Abril">
+    Abril
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#maio" title="Maio">
+    Maio
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#junho" title="Junho">
+    Junho
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#julho" title="Julho">
+    Julho
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="LEIAME/" title="LEIAME">
+      LEIAME
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="aula1/" title="Aula 1 (2019-04-04)">
+      Aula 1 (2019-04-04)
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="aula2/" title="Aula 2 (2019-04-08)">
+      Aula 2 (2019-04-08)
+    </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="exercicios1/" title="Exercícios 1">
+      Exercícios 1
+    </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Índice</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#professor" title="Professor">
+    Professor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#disciplina" title="Disciplina">
+    Disciplina
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#avaliacao-projeto" title="Avaliação (projeto)">
+    Avaliação (projeto)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ementa" title="Ementa">
+    Ementa
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#objetivos" title="Objetivos">
+    Objetivos
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conteudo-programatico" title="Conteúdo programático">
+    Conteúdo programático
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#referencias" title="Referências">
+    Referências
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cronograma" title="Cronograma">
+    Cronograma
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#calendario" title="Calendário">
+    Calendário
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aulasprovas" title="Aulas/Provas">
+    Aulas/Provas
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#abril" title="Abril">
+    Abril
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#maio" title="Maio">
+    Maio
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#junho" title="Junho">
+    Junho
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#julho" title="Julho">
+    Julho
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href="index.pdf" title="PDF Export"></a>
+<h1 id="disciplina-algoritmos-e-estrutura-de-dados">Disciplina Algoritmos e Estrutura de Dados</h1>
+<h2 id="professor">Professor</h2>
+<ul>
+<li><strong>Nome:</strong> Allan (Allainclair Flausino dos Santos)</li>
+<li><strong>Email:</strong> allainclair@gmail.com</li>
+<li><strong>Graduação:</strong> Mestre em Ciência da computação</li>
+<li><strong>Informações profissionais</strong>: <a href="https://www.linkedin.com/in/allainclair/">LinkeIn - https://www.linkedin.com/in/allainclair/</a></li>
+</ul>
+<h2 id="disciplina">Disciplina</h2>
+<ul>
+<li><strong>Site:</strong> <a href="https://allainclair.github.io/disc-alg-est-dados/">https://allainclair.github.io/disc-alg-est-dados/</a></li>
+</ul>
+<h2 id="avaliacao-projeto">Avaliação (projeto)</h2>
+<ul>
+<li>prova 1 [0-10]</li>
+<li>prova 2 [0-10]</li>
+<li>trabalho 1 [0-10]</li>
+<li>trabalho 2 [0-10]</li>
+<li><strong>Nota final (NF):</strong> (prova 1 + prova 2 + trabalho 1 + trabalho 2) / 4</li>
+<li>Nota Exame (NE)</li>
+<li><strong>Média final (MF) = </strong> (NF + NE) / 2</li>
+</ul>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_1_0" name="__tabs_1" type="radio">
+<label for="__tab_1_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">if</span> <span class="n">NF</span> <span class="o">&gt;</span> <span class="mf">6.0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">'aprovado'</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">MF</span> <span class="o">&gt;</span> <span class="mf">5.0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">'aprovado'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">'reprovado'</span><span class="p">)</span>
+</pre></div></div>
+</input></div>
+<h2 id="ementa">Ementa</h2>
+<p>Estudo de algoritmos e estruturas de dados para representação e manipulação de
+informações. Teorias dos Grafos. Aplicações.</p>
+<h3 id="objetivos">Objetivos</h3>
+<p>Estudar as principais estruturas de dados: listas, árvores e tabelas; métodos
+de busca e classificação de dados. Noções de complexidade de algoritmos.
+Estudar modelagem de tipos abstratos de dados e objetos. Introdução a Teorias
+dos Grafos. Desenvolver implementações em uma linguagem de alto nível.</p>
+<h3 id="conteudo-programatico">Conteúdo programático</h3>
+<ol>
+<li>
+<p>Conceitos básicos</p>
+<p>1.1 Tipos Abstrato de Dados e Objetos</p>
+<p>1.2 Estruturas de dados</p>
+<p>1.3. Formas de alocação</p>
+<p>1.4 Noções de complexidade de algoritmos</p>
+</li>
+<li>
+<p>Listas</p>
+<p>2.1 Listas lineares estáticas e dinâmicas</p>
+<p>2.2 Listas circulares e duplamente ligadas</p>
+<p>2.3 Filas e Pilhas</p>
+<p>2.4 Algoritmos básicos de gerenciamento</p>
+</li>
+<li>
+<p>Árvores</p>
+<p>3.1. Árvores binárias</p>
+<p>3.2. Árvores de pesquisa</p>
+<p>3.3. Árvores AVL</p>
+<p>3.4. Alguns algoritmos básicos de travessia e gerenciamento</p>
+</li>
+<li>
+<p>Tabelas e métodos de busca</p>
+<p>4.1 Pesquisa seqüencial</p>
+<p>4.2 Pesquisa binária</p>
+<p>4.3 Pesquisa através de cálculo de endereço</p>
+<p>4.4 Alguns algoritmos básicos de travessia e gerenciamento</p>
+</li>
+<li>
+<p>Classificação e métodos de busca</p>
+<p>5.1 Classificação por inserção (direta e método dos incrementos 
+    decrescentes)</p>
+<p>5.2 Classificação por troca (método da bolha e método de troca e partição)</p>
+<p>5.3 Classificação por seleção (método de seleção direta e método de 
+    seleção em árvore)</p>
+<p>5.4 Classificação por distribuição</p>
+<p>5.5 Classificação por intercalação</p>
+</li>
+<li>
+<p>Introdução à Teoria dos Grafos</p>
+<p>6.1 Histórico e apresentação de problemas com solução através da Teoria 
+    dos Grafos.</p>
+<p>6.2 Definições, elementos básicos e representação gráfica (nó, arco, 
+    rotulação, subgrafos, tipos de grafo, operações sobre grafos).</p>
+<p>6.3 Representações computacionais.</p>
+<p>6.4 Algoritmos básicos de travessia</p>
+</li>
+<li>
+<p>Implementação das estruturas algorítmicas em uma linguagem de alto nível</p>
+</li>
+</ol>
+<h3 id="referencias">Referências</h3>
+<ul>
+<li>
+<p>CELES, W.; CERQUEIRA, R.; NETTO, J.L.R. Introdução às estruturas de dados.
+  Rio de Janeiro: Editora Campus, 2004;</p>
+</li>
+<li>
+<p><strong>CORMEN, T.H.; LEISERSON,C.E.; STEIN, C.; RIVEST, R.L. Algoritmos: Teoria e 
+  Prática. Terceira Edição. Editora Campus, 2011;</strong></p>
+</li>
+<li>
+<p>FOLK, M. J.; ZOELLICK, B. File Structures. Second Edition. Addison-Wesley, 
+  1992;</p>
+</li>
+<li>
+<p>FORBELLONE, A. L. V.; EBERSPÄCHER, H. F. Lógica de programação: a 
+  construção de algoritmos e estruturas de dados. 3a ed. São Paulo:
+  Prentice-Hall, 2005;</p>
+</li>
+<li>
+<p>GUIMARÃES, A.M.; LAGES, N.A.C. Algoritmos e estruturas de dados. Rio de 
+  Janeiro: LTC – Livros Técnicos e Científicos Editora S.A., 1994;</p>
+</li>
+<li>
+<p>HOROWITZ, E. E.; SAHNI, S. Fundamentos de Estruturas de Dados, Editora 
+Campus, 1987;</p>
+</li>
+<li>
+<p>LOPES, A.; GARCIA, G. Introdução à programação: 500 Algoritmos Resolvidos. 
+Rio de Janeiro: Elsevier, 2006;</p>
+</li>
+<li>
+<p>PREISS, B. R. Estruturas de dados e algoritmos. Editora Campus, 2001.
+SALVETTI, D. D., BARBOSA, L. M. Algoritmos. São Paulo: Pearson Education do
+Brasil, 1998;</p>
+</li>
+<li>
+<p>SZWARCFITER, J.L.; MARKENZON, L. Estruturas de dados e seus algoritmos. 1a
+edição. Rio de Janeiro: LTC – Livros Técnicos e Científicos Editora S.A., 1994;</p>
+</li>
+<li>
+<p>TENENBAUM, A.M.; LANGSAM, Y.; AUGENSTEIN, M.J. Estruturas de dados usando C.
+São Paulo: MAKRON Books, 1995;</p>
+</li>
+<li>
+<p>VELOSO, Paulo. Estruturas de dados. 2a Edição. Rio de Janeiro: Campus, 1984.
+WIRTH, N. Algoritmos e estruturas de dados. 2a edição. Rio de Janeiro: 
+Editora Prentice-Hall do Brasil Ltda., 1989.</p>
+</li>
+</ul>
+<h2 id="cronograma">Cronograma</h2>
+<h3 id="calendario">Calendário</h3>
+<ul>
+<li>07 março 2019 início do ano letivo e 1º semestre;</li>
+<li>13 julho 2019 fim das aulas do primeiro semestre;</li>
+<li>17-23 julho avaliação final.</li>
+</ul>
+<h3 id="aulasprovas">Aulas/Provas</h3>
+<h4 id="abril">Abril</h4>
+<p>2019-04-05 Conceitos básicos</p>
+<p>2019-04-08 Conceitos básicos</p>
+<p>2019-04-12 Conceitos básicos</p>
+<p>2019-04-15 Conceitos básicos</p>
+<p>2019-04-19 Listas</p>
+<p>2019-04-22 Listas</p>
+<p>2019-04-26 Listas</p>
+<p>2019-04-29 Listas</p>
+<p>Total = 8</p>
+<h4 id="maio">Maio</h4>
+<p>2019-05-03 Árvores</p>
+<p>2019-05-06 Árvores</p>
+<p>2019-05-10 Árvores</p>
+<p>2019-05-17 Árvores</p>
+<p>2019-05-20 Tabelas e métodos de busca</p>
+<p>2019-05-24 Tabelas e métodos de busca</p>
+<p>2019-05-27 Tabelas e métodos de busca</p>
+<p>2019-05-31 Tabelas e métodos de busca</p>
+<p>Total = 8</p>
+<h4 id="junho">Junho</h4>
+<p>2019-06-03 Classificação e métodos de busca</p>
+<p>2019-06-07 Classificação e métodos de busca</p>
+<p>2019-06-10 Classificação e métodos de busca</p>
+<p>2019-06-14 Classificação e métodos de busca</p>
+<p>2019-06-17 Introdução à Teoria dos Grafos</p>
+<p>2019-06-24 Introdução à Teoria dos Grafos</p>
+<p>2019-06-28 Introdução à Teoria dos Grafos</p>
+<p>Total = 7</p>
+<h4 id="julho">Julho</h4>
+<p>2019-07-01 Introdução à Teoria dos Grafos</p>
+<p>2019-07-05</p>
+<p>2019-07-08</p>
+<p>2019-07-12</p>
+<p>2019-07-19 - Final</p>
+<p>2019-07-22 - Final</p>
+<p>Total = 4 (sem final)</p>
+<p>Total geral = 27</p>
+<p>Total menos duas provas = 25</p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-nav">
+<nav class="md-footer-nav__inner md-grid">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="LEIAME/" rel="next" title="LEIAME">
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                LEIAME
+              </span>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="assets/javascripts/application.dc02f8ce.js"></script>
+<script src="assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+<script src="assets/javascripts/lunr/lunr.pt.js"></script>
+<script src="assets/javascripts/lunr/lunr.multi.js"></script>
+<script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+</body>
+</html>
