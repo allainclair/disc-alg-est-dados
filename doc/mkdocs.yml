@@ -1,0 +1,28 @@
+extra:
+  search:
+    language: 'en, pt'
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+
+nav:
+- Introdução: index.md
+- LEIAME: LEIAME.md
+- Aula 1 (2019-04-04): aula1.md
+- Aula 2 (2019-04-08): aula2.md
+- Exercícios 1: exercicios1.md
+
+plugins:
+  - search
+  - pdf-export
+
+site_name: Algoritmos e estruturas de dados
+site_description: Disciplina algoritmos e estruturas de dados
+site_author: Allainclair Flausino dos Santos
+site_url: https://github.com/allainclair
+
+theme:
+  language: pt
+  name: material
