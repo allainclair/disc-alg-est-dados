@@ -7,6 +7,29 @@ modificação eficiente.
 
 ### Revisão
 
+#### Algumas formas de `print` *
+
+```Python tab=
+print('Print com mais do que um argumento', arg1, arg2)
+
+print('Uso do operador "percentage" para string: %s %s' % (string1, string2))
+
+# Python Version >= 3.7
+string = 'uma string'
+print(f'Uma string com interpotalacao: {string}')
+
+print(
+    'Evitar linhas de codigos muito extensas pois dificulta a leitura do seu '
+    'codigo, entao essa eh uma forma de vc quebrar a linha. Existe uma regra ' 
+    'de no maximo 79-80 colunas de codigo, tente usar ela, soh que nao tem ' 
+    'problema se passar de 80 ou chegar ateh umas 85 colunas. Essa formatacao ' 
+    'de codigo desse print pode ser usada nos codigos tambem.')
+
+funcao(
+    argumento1, argumento2, argumento3, argumento4, argumento5, argumento6,
+    argumento7, argumento8)
+```
+
 #### Variáveis simples *
 
 ```Python tab=
@@ -70,12 +93,14 @@ for (i=0; i<n; i++) {
 }
 ```
 
-Um **iterador** é um "conjunto de elementos", podendo ser vazio, ter apenas um 
-elemento, ou mais do que um elemento. Se for vazio, o corpo (escopo) do `for` 
+Um **iterador** é uma abstração para que iterações sejam feitas de forma 
+mais simples, sema necessidade de usar índices em *fors* por exemplo.
+Se o iterador for vazio, o corpo (escopo) do `for` 
 não é executado. Caso contrário o corpo do `for` é executado em todos 
 elementos do iterador.
 
 ```Python tab=
+# Iterador de uma lista.
 for i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
     print('i: %s', i)
 1
@@ -88,6 +113,10 @@ for i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
 8
 9
 10
+
+# Iterador de um conjunto.
+for i in {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}:
+    print('i: %s', i)
 ```
 
 Outros exemplos com FOR:
@@ -113,7 +142,7 @@ tamanho = len(vetor)  # Funcao pronta (interna) do Python.
 print(tamanho)
 10
 for i in range(tamanho):
-    print('i: %s', vetor[i])
+    print('i: %s' % vetor[i])
 
 
 # Alernativa mais elegante.
@@ -122,7 +151,7 @@ for elemento in vetor:
     
 # Alernativa elegante enumerada.
 for i, elemento in enumerate(vetor):
-    print('Elemento %s: %s', (i, elemento))
+    print('Elemento %s: %s' % (i, elemento))
     
 list(enumerate(vetor))
 [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9)]
@@ -130,6 +159,8 @@ list(enumerate(vetor))
 nomes = ['joao', 'maria,' 'jose']
 for i, elemento in enumerate(nomes):
     print('Elemento %s: %s', (i, elemento))
+    
+
 
 ```
 

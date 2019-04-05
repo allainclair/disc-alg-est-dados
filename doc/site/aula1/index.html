@@ -6,7 +6,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="Disciplina de banco de dados" name="description"/>
+<meta content="Disciplina algoritmos e estruturas de dados" name="description"/>
 <link href="https://github.com/allainclair/aula1/" rel="canonical"/>
 <meta content="Allainclair Flausino dos Santos" name="author"/>
 <meta content="Copiar para área de transferência" name="lang:clipboard.copy"/>
@@ -20,7 +20,7 @@
 <meta content="[\s\-]+" name="lang:search.tokenizer"/>
 <link href="../assets/images/favicon.png" rel="shortcut icon"/>
 <meta content="mkdocs-1.0.4, mkdocs-material-4.1.1" name="generator"/>
-<title>Aula 1 (2019-04-02) - Banco de dados</title>
+<title>Aula 1 (2019-04-04) - Algoritmos e estruturas de dados</title>
 <link href="../assets/stylesheets/application.3020aac5.css" rel="stylesheet"/>
 <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -36,14 +36,14 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-<a class="md-skip" href="#banco-de-dados" tabindex="1">
+<a class="md-skip" href="#estrutura-de-dados" tabindex="1">
         Ir para o conteúdo
       </a>
 <header class="md-header" data-md-component="header">
 <nav class="md-header-nav md-grid">
 <div class="md-flex">
 <div class="md-flex__cell md-flex__cell--shrink">
-<a class="md-header-nav__button md-logo" href="https://github.com/allainclair" title="Banco de dados">
+<a class="md-header-nav__button md-logo" href="https://github.com/allainclair" title="Algoritmos e estruturas de dados">
 <i class="md-icon"></i>
 </a>
 </div>
@@ -53,10 +53,10 @@
 <div class="md-flex__cell md-flex__cell--stretch">
 <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
 <span class="md-header-nav__topic">
-              Banco de dados
+              Algoritmos e estruturas de dados
             </span>
 <span class="md-header-nav__topic">
-              Aula 1 (2019-04-02)
+              Aula 1 (2019-04-04)
             </span>
 </div>
 </div>
@@ -96,10 +96,10 @@
 <div class="md-sidebar__inner">
 <nav class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title md-nav__title--site" for="__drawer">
-<a class="md-nav__button md-logo" href="https://github.com/allainclair" title="Banco de dados">
+<a class="md-nav__button md-logo" href="https://github.com/allainclair" title="Algoritmos e estruturas de dados">
 <i class="md-icon"></i>
 </a>
-    Banco de dados
+    Algoritmos e estruturas de dados
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -107,33 +107,156 @@
       Introdução
     </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../LEIAME/" title="LEIAME">
+      LEIAME
+    </a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-        Aula 1 (2019-04-02)
+        Aula 1 (2019-04-04)
       </label>
-<a class="md-nav__link md-nav__link--active" href="./" title="Aula 1 (2019-04-02)">
-      Aula 1 (2019-04-02)
+<a class="md-nav__link md-nav__link--active" href="./" title="Aula 1 (2019-04-04)">
+      Aula 1 (2019-04-04)
     </a>
 <nav class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">Índice</label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#banco-de-dados" title="Banco de dados">
-    Banco de dados
+<a class="md-nav__link" href="#estrutura-de-dados" title="Estrutura de dados">
+    Estrutura de dados
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#revisao" title="Revisão">
+    Revisão
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#variaveis-simples" title="Variáveis simples *">
+    Variáveis simples *
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#operadores" title="Operadores *">
+    Operadores *
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#estruturas-de-repeticao" title="Estruturas de repetição **">
+    Estruturas de repetição **
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for" title="FOR ***">
+    FOR ***
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#while" title="WHILE *">
+    WHILE *
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aula2/" title="Aula 2 (2019-04-04)">
-      Aula 2 (2019-04-04)
+<a class="md-nav__link" href="#funcao" title="Função **">
+    Função **
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exercicio-encontrar-posicao-de-um-elemento-em-um-vetor" title="Exercício: encontrar posição de um elemento em um vetor **">
+    Exercício: encontrar posição de um elemento em um vetor **
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exemplos-e-revisao" title="Exemplos e revisão">
+    Exemplos e revisão
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vetor-arranjo" title="Vetor (Arranjo)">
+    Vetor (Arranjo)
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#formato" title="Formato:">
+    Formato:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gerenciamento" title="Gerenciamento:">
+    Gerenciamento:
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adicionar" title="Adicionar *">
+    Adicionar *
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#atualizar" title="Atualizar *">
+    Atualizar *
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#remover" title="Remover *">
+    Remover *
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ler" title="Ler *">
+    Ler *
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#armazenamento" title="Armazenamento: **">
+    Armazenamento: **
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#memoria-ram" title="Memória RAM **">
+    Memória RAM **
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aula2/" title="Aula 2 (2019-04-08)">
+      Aula 2 (2019-04-08)
     </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aula3/" title="Aula 3 (2019-04-09)">
-      Aula 3 (2019-04-09)
+<a class="md-nav__link" href="../exercicios1/" title="Exercícios 1">
+      Exercícios 1
     </a>
 </li>
 </ul>
@@ -148,9 +271,127 @@
 <label class="md-nav__title" for="__toc">Índice</label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#banco-de-dados" title="Banco de dados">
-    Banco de dados
+<a class="md-nav__link" href="#estrutura-de-dados" title="Estrutura de dados">
+    Estrutura de dados
   </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#revisao" title="Revisão">
+    Revisão
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#variaveis-simples" title="Variáveis simples *">
+    Variáveis simples *
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#operadores" title="Operadores *">
+    Operadores *
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#estruturas-de-repeticao" title="Estruturas de repetição **">
+    Estruturas de repetição **
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for" title="FOR ***">
+    FOR ***
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#while" title="WHILE *">
+    WHILE *
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#funcao" title="Função **">
+    Função **
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exercicio-encontrar-posicao-de-um-elemento-em-um-vetor" title="Exercício: encontrar posição de um elemento em um vetor **">
+    Exercício: encontrar posição de um elemento em um vetor **
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exemplos-e-revisao" title="Exemplos e revisão">
+    Exemplos e revisão
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vetor-arranjo" title="Vetor (Arranjo)">
+    Vetor (Arranjo)
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#formato" title="Formato:">
+    Formato:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gerenciamento" title="Gerenciamento:">
+    Gerenciamento:
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adicionar" title="Adicionar *">
+    Adicionar *
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#atualizar" title="Atualizar *">
+    Atualizar *
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#remover" title="Remover *">
+    Remover *
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ler" title="Ler *">
+    Ler *
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#armazenamento" title="Armazenamento: **">
+    Armazenamento: **
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#memoria-ram" title="Memória RAM **">
+    Memória RAM **
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -159,21 +400,288 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href="aula1.pdf" title="PDF Export"></a>
-<h1>Aula 1 (2019-04-02)</h1>
-<h2 id="banco-de-dados">Banco de dados</h2>
-<ul>
-<li>
-<p>Um <a href="https://en.wikipedia.org/wiki/Database">banco de dados</a> é uma coleção 
-organizada de dados a qual geralmente é armazenada e acessada 
-eletronicamente por meio de um sistema computacional;</p>
-</li>
-<li>
-<p>O <a href="https://en.wikipedia.org/wiki/Database#Database_management_system">sistema gerenciador de banco de dados (SGBD)</a> é um
-<em>software</em> que interage com usuários finais, aplicações e o próprio banco de
-dados. O SGBD captura e analiza os dados.</p>
-</li>
-</ul>
-<p><img alt="Banco de dados" src="../images/database.svg"/></p>
+<h1>Aula 1 (2019-04-04)</h1>
+<h2 id="estrutura-de-dados">Estrutura de dados</h2>
+<p>Em Ciência da computação, uma <a href="https://https://en.wikipedia.org/wiki/Data_structure">estrutura de dado</a> é um  formato de 
+organização, gerenciamento e armazenamento de dados que habilita acesso e 
+modificação eficiente.</p>
+<h3 id="revisao">Revisão</h3>
+<h4 id="variaveis-simples">Variáveis simples *</h4>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_1_0" name="__tabs_1" type="radio">
+<label for="__tab_1_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># Inteiro</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">c</span> <span class="o">=</span> <span class="bp">True</span>  <span class="c1"># Booleano</span>
+<span class="n">d</span> <span class="o">=</span> <span class="s1">'uma string'</span>  <span class="c1"># String</span>
+<span class="n">e</span> <span class="o">=</span> <span class="mf">1.1</span>  <span class="c1"># Ponto flutuante (Float)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="mi">2</span>
+<span class="k">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="bp">True</span>
+<span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<span class="n">uma</span> <span class="n">string</span>
+<span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="mf">1.1</span>
+</pre></div></div>
+</input></div>
+<h4 id="operadores">Operadores *</h4>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_2_0" name="__tabs_2" type="radio">
+<label for="__tab_2_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1"># Aritmeticos principais: + - * / %</span>
+<span class="c1"># Extra: ** (potencia)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="mi">6</span>
+<span class="n">a</span><span class="o">**</span><span class="mi">2</span>
+<span class="mi">4</span>
+
+
+<span class="c1"># Logicos principais: not and or</span>
+<span class="c1"># Comparacao: &lt; &gt; &lt;= &gt;= == !=</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span>
+<span class="bp">False</span>
+<span class="n">b</span> <span class="o">&gt;</span> <span class="n">a</span>
+<span class="bp">True</span>
+</pre></div></div>
+</input></div>
+<h4 id="estruturas-de-repeticao">Estruturas de repetição **</h4>
+<p><strong>FOR, WHILE,</strong> DO WHILE, REPEAT UNTIL.</p>
+<h5 id="for">FOR ***</h5>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_3_0" name="__tabs_3" type="radio">
+<label for="__tab_3_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">ELEMENTO</span> <span class="ow">in</span> <span class="n">ITERADOR</span><span class="p">:</span>
+    <span class="n">CORPO</span> <span class="n">DO</span> <span class="n">FOR</span>
+</pre></div></div>
+<input id="__tab_3_1" name="__tabs_3" type="radio">
+<label for="__tab_3_1">C</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">CORPO</span> <span class="n">DO</span> <span class="n">FOR</span>
+<span class="p">}</span>
+</pre></div></div>
+</input></input></div>
+<p>Um <strong>iterador</strong> é um "conjunto de elementos", podendo ser vazio, ter apenas um 
+elemento, ou mais do que um elemento. Se for vazio, o corpo (escopo) do <code>for</code> 
+não é executado. Caso contrário o corpo do <code>for</code> é executado em todos 
+elementos do iterador.</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_4_0" name="__tabs_4" type="radio"/>
+<label for="__tab_4_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">'i: </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
+<span class="mi">5</span>
+<span class="mi">6</span>
+<span class="mi">7</span>
+<span class="mi">8</span>
+<span class="mi">9</span>
+<span class="mi">10</span>
+</pre></div></div>
+</div>
+<p>Outros exemplos com FOR:</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_5_0" name="__tabs_5" type="radio"/>
+<label for="__tab_5_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># Funcao pronta (interna) do Python.</span>
+<span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Transformar o "range" em uma "list" (vetor).</span>
+<span class="c1"># Para fins de aprendizado, vetor e lista (list) sao sinonimos.</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="n">vetor</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+
+<span class="n">tamanho</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">vetor</span><span class="p">)</span>  <span class="c1"># Funcao pronta (interna) do Python.</span>
+<span class="k">print</span><span class="p">(</span><span class="n">tamanho</span><span class="p">)</span>
+<span class="mi">10</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tamanho</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">'i: </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">vetor</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+
+<span class="c1"># Alernativa mais elegante.</span>
+<span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">vetor</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">'Elemento: </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">elemento</span><span class="p">)</span>
+
+<span class="c1"># Alernativa elegante enumerada.</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">vetor</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">'Elemento </span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">elemento</span><span class="p">))</span>
+
+<span class="nb">list</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">vetor</span><span class="p">))</span>
+<span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">)]</span>
+
+<span class="n">nomes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'joao'</span><span class="p">,</span> <span class="s1">'maria,'</span> <span class="s1">'jose'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">nomes</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">'Elemento </span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">elemento</span><span class="p">))</span>
+</pre></div></div>
+</div>
+<h5 id="while">WHILE *</h5>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_6_0" name="__tabs_6" type="radio"/>
+<label for="__tab_6_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">while</span> <span class="n">CONDICAO</span><span class="p">:</span>
+    <span class="n">CORPO</span> <span class="n">DO</span> <span class="n">WHILE</span>
+</pre></div></div>
+</div>
+<p>Enquanto a <code>condição</code> for <code>verdadeira</code> o while é executado 
+indefinidamente; caso contrário o <code>while</code> para sua execução.  </p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_7_0" name="__tabs_7" type="radio"/>
+<label for="__tab_7_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">condicao</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">condicao</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="n">condicao</span> <span class="o">=</span> <span class="bp">False</span>
+</pre></div></div>
+</div>
+<h4 id="funcao">Função **</h4>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_8_0" name="__tabs_8" type="radio"/>
+<label for="__tab_8_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">nome</span><span class="p">(</span><span class="n">parametro1</span><span class="p">,</span> <span class="n">parametro2</span><span class="p">):</span>
+    <span class="n">CORPO</span> <span class="n">DA</span> <span class="n">FUNCAO</span>
+    <span class="k">return</span> <span class="n">VALOR</span>
+</pre></div></div>
+</div>
+<h3 id="exercicio-encontrar-posicao-de-um-elemento-em-um-vetor">Exercício: encontrar posição de um elemento em um vetor **</h3>
+<p>Dado um <code>vetor</code> e um <code>elemento</code> como entrada para uma função chamda de <code>find</code>,
+retorne a posição do elemento encontrado; caso não seja encontrado retorne
+<code>None</code> (nulo).</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_9_0" name="__tabs_9" type="radio"/>
+<label for="__tab_9_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="n">vetor</span><span class="p">,</span> <span class="n">elemento</span><span class="p">):</span>
+</pre></div></div>
+</div>
+<h3 id="exemplos-e-revisao">Exemplos e revisão</h3>
+<h4 id="vetor-arranjo">Vetor (Arranjo)</h4>
+<h5 id="formato">Formato:</h5>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_10_0" name="__tabs_10" type="radio"/>
+<label for="__tab_10_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1"># Em python o nome dessa estrutura de dado eh conhecida como lista</span>
+<span class="c1"># Mas para fins de exemplo criamos uma variavel com o nome vetor.</span>
+<span class="c1"># Indices do vetor comeca em 0.</span>
+<span class="n">vetor</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">vetor</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="mi">1</span>
+</pre></div></div>
+<input id="__tab_10_1" name="__tabs_10" type="radio"/>
+<label for="__tab_10_1">C</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="cm">/* Aqui alocamos um vetor de inteiros com 10 elementos, sendo eles todo </span>
+<span class="cm">*  o intervalo [1, 10].</span>
+<span class="cm">*  Indicies comecam em 0.</span>
+<span class="cm">*/</span> 
+<span class="kt">int</span> <span class="n">vetor</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">};</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span> <span class="n">vetor</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="mi">1</span>
+</pre></div></div>
+</div>
+<h5 id="gerenciamento">Gerenciamento:</h5>
+<p>Em um vetor podemos: <strong>adicionar, atualizar, excluir e ler</strong> elementos.</p>
+<h6 id="adicionar">Adicionar *</h6>
+<p>Adição modifica o vetor original, aumentando pelo menos um elemento novo.</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_11_0" name="__tabs_11" type="radio"/>
+<label for="__tab_11_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">vetor</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">vetor</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>  <span class="c1"># Metodo (funcao) de orientacao a objeto.</span>
+<span class="n">vetor</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+
+<span class="c1"># Apenas para mostrar como eh no "paradigma estrutural".</span>
+<span class="k">def</span> <span class="nf">meu_append</span><span class="p">(</span><span class="n">vetor</span><span class="p">,</span> <span class="n">novo_elemento</span><span class="p">):</span>
+    <span class="n">vetor</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">novo_elemento</span><span class="p">)</span>
+    <span class="c1"># Funcao nao retorna nada, podemos chamar de "procedimento".</span>
+
+<span class="n">vetor</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">meu_append</span><span class="p">(</span><span class="n">vetor</span><span class="p">,</span> <span class="n">novo_elemento</span><span class="p">)</span>
+<span class="n">vetor</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span> 
+</pre></div></div>
+</div>
+<h6 id="atualizar">Atualizar *</h6>
+<p>Atualização precisa modificar algum elemento já existente do vetor original.</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_12_0" name="__tabs_12" type="radio"/>
+<label for="__tab_12_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">vetor</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">vetor</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">11</span>
+<span class="n">vetor</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+</pre></div></div>
+</div>
+<h6 id="remover">Remover *</h6>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_13_0" name="__tabs_13" type="radio"/>
+<label for="__tab_13_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">vetor</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">vetor</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># Qual algoritmo eh necessario ANTES de remover?</span>
+<span class="n">vetor</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="c1"># TODO: exercicio: fazer o seu proprio remover.</span>
+<span class="k">def</span> <span class="nf">meu_remover</span><span class="p">(</span><span class="n">vetor</span><span class="p">,</span> <span class="n">elemento</span><span class="p">):</span>
+    <span class="k">pass</span>
+    <span class="c1"># Funcao nao retorna nada</span>
+</pre></div></div>
+</div>
+<h6 id="ler">Ler *</h6>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_14_0" name="__tabs_14" type="radio"/>
+<label for="__tab_14_0">Python</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1"># Leitura NAO pode modificar o nosso vetor original</span>
+<span class="n">vetor</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">vetor</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">a</span>
+<span class="mi">2</span>
+<span class="c1"># Leitura direta do vetor para impressao</span>
+<span class="k">print</span><span class="p">(</span><span class="n">vetor</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</pre></div></div>
+</div>
+<h5 id="armazenamento">Armazenamento: **</h5>
+<p>Memória RAM, registradores do processador (CPU), dispositivo de 
+armazenamento secundário (HDDs, SSDs, etc).</p>
+<h6 id="memoria-ram">Memória RAM **</h6>
+<p>Um vetor de caracteres armazenados em memória RAM.</p>
+<div class="codehilite"><pre><span></span># Assumindo que cada caracter tem um byte.
+
+vetor = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+
+Endereço  Dado
+
+100000    '1'
+100001    '2'
+100002    '3'
+100003    '4'
+100004    '5'
+100005    '6'
+100006    '7'
+100007    '8'
+100008    '9'
+100009    '10'
+</pre></div>
 </article>
 </div>
 </div>
@@ -181,7 +689,7 @@ dados. O SGBD captura e analiza os dados.</p>
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav class="md-footer-nav__inner md-grid">
-<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href=".." rel="prev" title="Introdução">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../LEIAME/" rel="prev" title="LEIAME">
 <div class="md-flex__cell md-flex__cell--shrink">
 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
 </div>
@@ -190,17 +698,17 @@ dados. O SGBD captura e analiza os dados.</p>
 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Introdução
+                LEIAME
               </span>
 </div>
 </a>
-<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../aula2/" rel="next" title="Aula 2 (2019-04-04)">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../aula2/" rel="next" title="Aula 2 (2019-04-08)">
 <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
 <span class="md-flex__ellipsis">
 <span class="md-footer-nav__direction">
                   Próximo
                 </span>
-                Aula 2 (2019-04-04)
+                Aula 2 (2019-04-08)
               </span>
 </div>
 <div class="md-flex__cell md-flex__cell--shrink">
