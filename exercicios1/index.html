@@ -1,241 +1,509 @@
 
-<!DOCTYPE doctype html>
 
-<html class="no-js" lang="pt">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="Disciplina algoritmos e estruturas de dados" name="description"/>
-<link href="https://github.com/allainclair/exercicios1/" rel="canonical"/>
-<meta content="Allainclair Flausino dos Santos" name="author"/>
-<meta content="Copiar para área de transferência" name="lang:clipboard.copy"/>
-<meta content="Copiado para área de transferência" name="lang:clipboard.copied"/>
-<meta content="en, pt" name="lang:search.language"/>
-<meta content="True" name="lang:search.pipeline.stopwords"/>
-<meta content="True" name="lang:search.pipeline.trimmer"/>
-<meta content="Nenhum resultado encontrado" name="lang:search.result.none"/>
-<meta content="1 resultado encontrado" name="lang:search.result.one"/>
-<meta content="# resultados encontrados" name="lang:search.result.other"/>
-<meta content="[\s\-]+" name="lang:search.tokenizer"/>
-<link href="../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.0.4, mkdocs-material-4.1.1" name="generator"/>
-<title>Exercícios 1 - Algoritmos e estruturas de dados</title>
-<link href="../assets/stylesheets/application.3020aac5.css" rel="stylesheet"/>
-<script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono" rel="stylesheet"/>
-<style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-<link href="../assets/fonts/material-icons.css" rel="stylesheet"/>
-</head>
-<body dir="ltr">
-<svg class="md-svg">
-<defs>
-</defs>
-</svg>
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-<a class="md-skip" href="#exercicio-11" tabindex="1">
+
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Disciplina algoritmos e estruturas de dados">
+      
+      
+        <link rel="canonical" href="https://github.com/allainclair/exercicios1/">
+      
+      
+        <meta name="author" content="Allainclair Flausino dos Santos">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar para área de transferência">
+      
+        <meta name="lang:clipboard.copied" content="Copiado para área de transferência">
+      
+        <meta name="lang:search.language" content="en, pt">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nenhum resultado encontrado">
+      
+        <meta name="lang:search.result.one" content="1 resultado encontrado">
+      
+        <meta name="lang:search.result.other" content="# resultados encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Exercícios 1 - Algoritmos e estruturas de dados</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#exercicio-11" tabindex="1" class="md-skip">
         Ir para o conteúdo
       </a>
-<header class="md-header" data-md-component="header">
-<nav class="md-header-nav md-grid">
-<div class="md-flex">
-<div class="md-flex__cell md-flex__cell--shrink">
-<a class="md-header-nav__button md-logo" href="https://github.com/allainclair" title="Algoritmos e estruturas de dados">
-<i class="md-icon"></i>
-</a>
-</div>
-<div class="md-flex__cell md-flex__cell--shrink">
-<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-</div>
-<div class="md-flex__cell md-flex__cell--stretch">
-<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-<span class="md-header-nav__topic">
-              Algoritmos e estruturas de dados
-            </span>
-<span class="md-header-nav__topic">
-              Exercícios 1
-            </span>
-</div>
-</div>
-<div class="md-flex__cell md-flex__cell--shrink">
-<label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://github.com/allainclair" title="Algoritmos e estruturas de dados" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Algoritmos e estruturas de dados
+              </span>
+              <span class="md-header-nav__topic">
+                Exercícios 1
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
 <div class="md-search" data-md-component="search" role="dialog">
-<label class="md-search__overlay" for="__search"></label>
-<div class="md-search__inner" role="search">
-<form class="md-search__form" name="search">
-<input autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="query" data-md-state="active" name="query" placeholder="Buscar" spellcheck="false" type="text"/>
-<label class="md-icon md-search__icon" for="__search"></label>
-<button class="md-icon md-search__icon" data-md-component="reset" tabindex="-1" type="reset">
-        
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
       </button>
-</form>
-<div class="md-search__output">
-<div class="md-search__scrollwrap" data-md-scrollfix="">
-<div class="md-search-result" data-md-component="result">
-<div class="md-search-result__meta">
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
             Digite para iniciar a busca
           </div>
-<ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</nav>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
 </header>
-<div class="md-container">
-<main class="md-main">
-<div class="md-main__inner md-grid" data-md-component="container">
-<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav class="md-nav md-nav--primary" data-md-level="0">
-<label class="md-nav__title md-nav__title--site" for="__drawer">
-<a class="md-nav__button md-logo" href="https://github.com/allainclair" title="Algoritmos e estruturas de dados">
-<i class="md-icon"></i>
-</a>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://github.com/allainclair" title="Algoritmos e estruturas de dados" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
     Algoritmos e estruturas de dados
   </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href=".." title="Introdução">
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introdução" class="md-nav__link">
       Introdução
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../LEIAME/" title="LEIAME">
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../LEIAME/" title="LEIAME" class="md-nav__link">
       LEIAME
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../aula1/" title="Aula 1 (2019-04-05)">
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula1/" title="Aula 1 (2019-04-05)" class="md-nav__link">
       Aula 1 (2019-04-05)
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../aula2/" title="Aula 2 (2019-04-08)">
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../aula2/" title="Aula 2 (2019-04-08)" class="md-nav__link">
       Aula 2 (2019-04-08)
     </a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
         Exercícios 1
       </label>
-<a class="md-nav__link md-nav__link--active" href="./" title="Exercícios 1">
+    
+    <a href="./" title="Exercícios 1" class="md-nav__link md-nav__link--active">
       Exercícios 1
     </a>
+    
+      
 <nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Índice</label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#exercicio-11" title="Exercício 1.1">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-11" title="Exercício 1.1" class="md-nav__link">
     Exercício 1.1
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#exercicio-12" title="Exercício 1.2">
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-12" title="Exercício 1.2" class="md-nav__link">
     Exercício 1.2
   </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#exercicio-121" title="Exercício 1.2.1">
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercicio-121" title="Exercício 1.2.1" class="md-nav__link">
     Exercício 1.2.1
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#exercicio-13" title="Exercício 1.3">
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-13" title="Exercício 1.3" class="md-nav__link">
     Exercício 1.3
   </a>
+  
 </li>
-</ul>
-</nav>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-14" title="Exercício 1.4" class="md-nav__link">
+    Exercício 1.4
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercicio-141" title="Exercício 1.4.1" class="md-nav__link">
+    Exercício 1.4.1
+  </a>
+  
 </li>
-</ul>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-15" title="Exercício 1.5" class="md-nav__link">
+    Exercício 1.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-16" title="Exercício 1.6" class="md-nav__link">
+    Exercício 1.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-exercicio" title="1.7 Exercício" class="md-nav__link">
+    1.7 Exercício
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-exercicio" title="1.8 Exercício" class="md-nav__link">
+    1.8 Exercício
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fontes" title="Fontes:" class="md-nav__link">
+    Fontes:
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
 <nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Índice</label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#exercicio-11" title="Exercício 1.1">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-11" title="Exercício 1.1" class="md-nav__link">
     Exercício 1.1
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#exercicio-12" title="Exercício 1.2">
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-12" title="Exercício 1.2" class="md-nav__link">
     Exercício 1.2
   </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#exercicio-121" title="Exercício 1.2.1">
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercicio-121" title="Exercício 1.2.1" class="md-nav__link">
     Exercício 1.2.1
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#exercicio-13" title="Exercício 1.3">
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-13" title="Exercício 1.3" class="md-nav__link">
     Exercício 1.3
   </a>
+  
 </li>
-</ul>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-14" title="Exercício 1.4" class="md-nav__link">
+    Exercício 1.4
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercicio-141" title="Exercício 1.4.1" class="md-nav__link">
+    Exercício 1.4.1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-15" title="Exercício 1.5" class="md-nav__link">
+    Exercício 1.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicio-16" title="Exercício 1.6" class="md-nav__link">
+    Exercício 1.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-exercicio" title="1.7 Exercício" class="md-nav__link">
+    1.7 Exercício
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-exercicio" title="1.8 Exercício" class="md-nav__link">
+    1.8 Exercício
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fontes" title="Fontes:" class="md-nav__link">
+    Fontes:
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
-</div>
-</div>
-</div>
-<div class="md-content">
-<article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href="exercicios1.pdf" title="PDF Export"></a>
-<h1>Exercícios 1</h1>
-<h2 id="exercicio-11">Exercício 1.1</h2>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Exercícios 1</h1>
+                
+                <h2 id="exercicio-11">Exercício 1.1</h2>
 <p>Defina uma função chamada <code>max3</code> que dado 3 números (a, b, c) ela retorne o 
 maior entre eles (sem usar a função <code>max()</code>).</p>
 <div class="superfences-tabs">
-<input checked="checked" id="__tab_1_0" name="__tabs_1" type="radio">
+<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
 <label for="__tab_1_0">Python</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1"># Para testar seu codigo adicione esses codigos no seu arquivo.</span>
 <span class="n">retorno</span> <span class="o">=</span> <span class="n">max3</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">'Apenas o primeiro retorno:'</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Apenas o primeiro retorno:&#39;</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span>
 <span class="k">assert</span> <span class="n">retorno</span> <span class="o">==</span> <span class="mi">3</span>
 <span class="k">assert</span> <span class="n">max3</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
 <span class="k">assert</span> <span class="n">max3</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
 <span class="k">assert</span> <span class="n">max3</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span>
 <span class="k">assert</span> <span class="n">max3</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="o">==</span> <span class="mi">11</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">'Tudo certo!!?'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Tudo certo!!?&#39;</span><span class="p">)</span>
 </pre></div></div>
-</input></div>
+</div>
 <h2 id="exercicio-12">Exercício 1.2</h2>
 <p>Faça um função chamada <code>media_pond3</code> que leia as 3 notas de um aluno e 
 retorne a média final deste aluno. Considerar que a média é ponderada e que o
  peso das notas é: 1, 2 e 3 respectivamente.</p>
 <div class="superfences-tabs">
-<input checked="checked" id="__tab_2_0" name="__tabs_2" type="radio">
+<input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
 <label for="__tab_2_0">Python</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1"># Para testar seu codigo adicione esses codigos no seu arquivo.</span>
 <span class="c1"># Necessario mais testes!</span>
 <span class="n">retorno</span> <span class="o">=</span> <span class="n">media_pond3</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">'Apenas o primeiro retorno:'</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Apenas o primeiro retorno:&#39;</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span>
 <span class="k">assert</span> <span class="n">retorno</span> <span class="o">==</span> <span class="mi">10</span>
 <span class="k">assert</span> <span class="n">media_pond3</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">'Tudo certo!!?'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Tudo certo!!?&#39;</span><span class="p">)</span>
 </pre></div></div>
-</input></div>
+</div>
 <h3 id="exercicio-121">Exercício 1.2.1</h3>
 <p>Faça uma função chamada <code>aprovar</code> que retorne Verdadeiro (<code>True</code>) ou Falso 
 (<code>False</code>) caso o aluno seja aprovado ou reprovado respectivamente, com as 
@@ -244,70 +512,191 @@ mesmas regras do Exercício 1.2. Funções que só retornam <code>True</code> ou
 aprovado é necessário que ele tenha no mínimo 6 de nota. É completamente válido
 reusar o código do Exercício 1.2.</p>
 <div class="superfences-tabs">
-<input checked="checked" id="__tab_3_0" name="__tabs_3" type="radio">
+<input name="__tabs_3" type="radio" id="__tab_3_0" checked="checked" />
 <label for="__tab_3_0">Python</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1"># Sem testes ainda!</span>
 </pre></div></div>
-</input></div>
+</div>
 <h2 id="exercicio-13">Exercício 1.3</h2>
 <p>Construa uma função <code>dist()</code> que, tendo como dados de entrada dois 
 pontos quaisquer no plano, p(x1,y1) e p(x2,y2), retorne a distância entre 
 eles. A ordem dos parâmetros são: x1, y1, x2 e y2.</p>
 <div class="superfences-tabs">
-<input checked="checked" id="__tab_4_0" name="__tabs_4" type="radio">
+<input name="__tabs_4" type="radio" id="__tab_4_0" checked="checked" />
 <label for="__tab_4_0">Python</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1"># Faca mais testes se voce quiser mais garantia</span>
 <span class="c1"># Preste a atencao na quantidade de parametros e seus respectivos nomes. </span>
 <span class="n">retorno</span> <span class="o">=</span> <span class="n">dist</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">'Apenas o primeiro retorno:'</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Apenas o primeiro retorno:&#39;</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span>
 <span class="k">assert</span> <span class="n">retorno</span> <span class="o">==</span> <span class="mi">1</span>
 <span class="k">assert</span> <span class="n">dist</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
 <span class="k">assert</span> <span class="n">dist</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
 <span class="k">assert</span> <span class="n">dist</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
 <span class="k">assert</span> <span class="n">dist</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">'Tudo certo!!?'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Tudo certo!!?&#39;</span><span class="p">)</span>
 </pre></div></div>
-</input></div>
-</article>
 </div>
-</div>
-</main>
+<h2 id="exercicio-14">Exercício 1.4</h2>
+<p>Faça um programa para ler o salário de um funcionário e aumentá-lo em 15%.
+Após o aumento, desconte 8% de impostos. Imprima o salário inicial, o salário
+com o aumento e o salário final.</p>
+<h3 id="exercicio-141">Exercício 1.4.1</h3>
+<p>Transforme o programa em uma função <code>salario_liquido</code>, que recebe o salário 
+como argumento e retorne o salário líquido com as regras do exercódio 1.3.</p>
+<h2 id="exercicio-15">Exercício 1.5</h2>
+<p>Elabore um programa que dada a idade de um nadador classifica-o em uma das 
+seguintes categorias:</p>
+<ul>
+<li>
+<p><code>Infantil A</code> = 5-7 anos</p>
+</li>
+<li>
+<p><code>Infantil B</code> = 8-10 anos</p>
+</li>
+<li>
+<p><code>Juvenil A</code> = 11-13 anos</p>
+</li>
+<li>
+<p><code>Juvenil B</code> = 14-17 anos</p>
+</li>
+<li>
+<p><code>Adulto</code> = maiores de 18 anos</p>
+</li>
+</ul>
+<p>Também transforme seu programa em uma função, caso não o tenha feito. Ou 
+seja, sua função terá como parâmetro a idade do nadador e retorna uma string
+ com o nome da categoria do nadador</p>
+<h2 id="exercicio-16">Exercício 1.6</h2>
+<p>Escreva um programa para contar dinheiro que pergunte, dentro de um monte de
+dinheiro, qual a quantidade de notas de:</p>
+<ul>
+<li>1 real;</li>
+<li>2 reais;</li>
+<li>5 reais;</li>
+<li>10 reais;</li>
+<li>50 reais;</li>
+<li>100 reais.</li>
+</ul>
+<p>Em seguida programa imprime qual o valor total em dinheiro.</p>
+<p>Exemplo: 2 notas de 1 real e 5 notas de 100 reais (entrada) dão um total de 
+502 reais (saída). </p>
+<h2 id="17-exercicio">1.7 Exercício</h2>
+<p>Escreva um programa que faça o inverso da questão anterior, ou seja, solicite
+ao usuário um valor (total) em dinheiro, e informe quantas notas de: 1 real,
+2 reais, 5 reais, 10 reais, 50 reais e 100 reais serão necessárias para compor
+este valor, de forma que seja utilizado o menor número de notas possível.</p>
+<p><strong>Exemplo:</strong> 507 reais são 5 notas de  100 reais, 1 nota de 5 reais e 2 notas
+de 1 real.</p>
+<p><strong>Bonus:</strong> minimize a quantidade de notas. No exemplo anterior poderia-se usar 
+1 nota de 2 reais ao invés de 2 notas de 1 real.</p>
+<h2 id="18-exercicio">1.8 Exercício</h2>
+<p>Uma agencia de espionagem encomendou um programa especial para fazer a codificação
+de mensagens. O programa inicialmente lê a mensagem e codifica da seguinte forma:</p>
+<ul>
+<li>Considerando os caracteres que compõem a mensagem aos pares, cada caractere é
+  trocado com o seu vizinho, sempre levando em consideração que isto é feito
+  aos pares,como mostra o exemplo abaixo:</li>
+</ul>
+<p><strong>mensagem original:</strong> 'Esta é uma mensagem.';</p>
+<p><strong>processo codificação:</strong> 'E s t a _ é _ u m a _ m e n s a g e m .'; (caracteres
+  _ indicam os espaços em branco)</p>
+<p><strong>mensagem codificada:</strong> 'sEaté u amm neaseg.m';</p>
+<ul>
+<li>Se o número de caracteres for ímpar, o programa acrescenta um caractere '#' 
+no final <strong>antes</strong> de realizar a troca dos pares.</li>
+</ul>
+<h2 id="fontes">Fontes:</h2>
+<ul>
+<li>
+<p><a href="https://www.ic.unicamp.br/~santanch/teaching/alg/2012-1/exercicios.html">https://www.ic.unicamp.br/~santanch/teaching/alg/2012-1/exercicios.html</a>;</p>
+</li>
+<li>
+<p><a href="https://www.inf.pucrs.br/~pinho/LaproI/Exercicios/SeqDecisao/lista1.htm">https://www.inf.pucrs.br/~pinho/LaproI/Exercicios/SeqDecisao/lista1.htm</a>.</p>
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
 <footer class="md-footer">
-<div class="md-footer-nav">
-<nav class="md-footer-nav__inner md-grid">
-<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../aula2/" rel="prev" title="Aula 2 (2019-04-08)">
-<div class="md-flex__cell md-flex__cell--shrink">
-<i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-</div>
-<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-<span class="md-flex__ellipsis">
-<span class="md-footer-nav__direction">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../aula2/" title="Aula 2 (2019-04-08)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
                   Anterior
                 </span>
                 Aula 2 (2019-04-08)
               </span>
-</div>
-</a>
-</nav>
-</div>
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-footer-copyright">
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
         
         powered by
         <a href="https://www.mkdocs.org">MkDocs</a>
         and
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
-</div>
-</div>
-</div>
+      </div>
+      
+        
+      
+    </div>
+  </div>
 </footer>
-</div>
-<script src="../assets/javascripts/application.dc02f8ce.js"></script>
-<script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
-<script src="../assets/javascripts/lunr/lunr.pt.js"></script>
-<script src="../assets/javascripts/lunr/lunr.multi.js"></script>
-<script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-</body>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.pt.js"></script>
+              
+            
+          
+          
+            <script src="../assets/javascripts/lunr/lunr.multi.js"></script>
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
 </html>
