@@ -16,7 +16,6 @@ nav:
 
 plugins:
   - search
-  - pdf-export
 
 site_name: Algoritmos e estruturas de dados
 site_description: Disciplina algoritmos e estruturas de dados
