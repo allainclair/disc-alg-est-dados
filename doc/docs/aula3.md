@@ -36,8 +36,8 @@ tamanho)`;
 * Podemos acessar os atributos com `vetor.valores[i]` e seu tamanho como 
 `vetor.tamanho`;
 
-* As operações (métodos) são `vetor.inserir(elemento)`, `vetor.remover
-  (elemento)`,  `vetor.ordenar()`;
+* As operações (métodos) são `vetor.inserir(elemento)`, `vetor.remover(elemento)`,
+  `vetor.ordenar()`;
 
 * Métodos tem `()` ao final, diferente de atributo que não tem.
 
@@ -185,7 +185,7 @@ people_list.pop()
 ### Operador IN
 
 Operador que retorna uma avaliação booleana (True or False). Análogo à 
-notação de conjutos "pertence" (diferente de está contido).
+notação de conjutos "pertence" (diferente de "está contido").
 
  ```Python
  VARIAVEL in ESTRUTURA_QUE_SUPORTA_IN
@@ -226,6 +226,9 @@ Exemplos:
 
 * Para cada x pertencente ao conjunto {1, 2, 3, 4} imprima o dobro de x se x
  for par.
+ 
+ Então podemos dizer que da para ler um ** *for* ** da seguinte forma: "para
+ cada elemento na lista faça:"
 
 ```Python tab=
 for ELEMENTO in ITERADOR:

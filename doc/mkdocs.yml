@@ -15,6 +15,8 @@ nav:
 - Aula 3 (2019-04-12): aula3.md
 - Aula 4 (2019-04-15): aula4.md
 - Exercícios 1: exercicios1.md
+- Exercícios 2: exercicios2.md
+- FOR: for.md
 
 plugins:
   - search
