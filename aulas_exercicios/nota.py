@@ -14,16 +14,17 @@ NF = float(NF)
 if NF >= 6.0:
     print('aprovado')
 else:
-    print('Aluno precisa de uma nota de exame')
-    MF = input('Nota do final do aluno: ')
-    print('Nota do final do aluno', MF)
-    if MF >= 5.0:
+    print('Aluno precisa de uma nota de media final')
+    MF = input('Media do final do aluno: ')
+    print('Nota da Media Final do aluno', MF)
+    # MF = float(MF)
+    if float(MF) >= 5.0:
         print('aprovado')
-
+    else:
+        print('reprovado')
 
 
 #elif MF >= 5.0:
 #    print('aprovado')
 #else:
 #    print('reprovado')
-
