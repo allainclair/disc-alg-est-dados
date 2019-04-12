@@ -307,10 +307,13 @@ list(enumerate(vetor))
 nomes = ['joao', 'maria,' 'jose']
 for i, elemento in enumerate(nomes):
     print('Elemento %s: %s', (i, elemento))
-    
-
-
 ```
+
+#### Exercício
+
+Crie uma função que receba 5 nomes e coloque esses nomes em uma lista1 que 
+está na ordem dos argumentos, e em uma lista2 que está na ordem inversa dos 
+argumentos. (sem usar *reverse*)
 
 #### WHILE *
 
