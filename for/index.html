@@ -13,7 +13,7 @@
         <meta name="description" content="Disciplina algoritmos e estruturas de dados">
       
       
-        <link rel="canonical" href="https://github.com/allainclair/LEIAME/">
+        <link rel="canonical" href="https://github.com/allainclair/for/">
       
       
         <meta name="author" content="Allainclair Flausino dos Santos">
@@ -42,7 +42,7 @@
     
     
       
-        <title>LEIAME - Algoritmos e estruturas de dados</title>
+        <title>FOR - Algoritmos e estruturas de dados</title>
       
     
     
@@ -81,10 +81,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#python-3" tabindex="1" class="md-skip">
-        Ir para o conteúdo
-      </a>
-    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -106,7 +102,7 @@
               Algoritmos e estruturas de dados
             </span>
             <span class="md-header-nav__topic">
-              LEIAME
+              FOR
             </span>
           
         </div>
@@ -184,56 +180,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        LEIAME
-      </label>
-    
-    <a href="./" title="LEIAME" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../LEIAME/" title="LEIAME" class="md-nav__link">
       LEIAME
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Índice</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#executando-seus-arquivospy" title="Executando seus arquivos.py" class="md-nav__link">
-    Executando seus arquivos.py
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sugestoes-de-ides-integrated-development-environments" title="Sugestões de IDEs (Integrated Development Environments)" class="md-nav__link">
-    Sugestões de IDEs (Integrated Development Environments)
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -313,11 +264,18 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../for/" title="FOR" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="FOR" class="md-nav__link md-nav__link--active">
       FOR
     </a>
+    
   </li>
 
     
@@ -328,82 +286,94 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Índice</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#executando-seus-arquivospy" title="Executando seus arquivos.py" class="md-nav__link">
-    Executando seus arquivos.py
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sugestoes-de-ides-integrated-development-environments" title="Sugestões de IDEs (Integrated Development Environments)" class="md-nav__link">
-    Sugestões de IDEs (Integrated Development Environments)
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                <h1 id="python-3">Python 3</h1>
-<p>Usaremos o Python 3, preferencialmente a versão 3.7 mas creio que não teremos
-problemas ao usar a versão 3.5.</p>
-<p>Verifique com o comando <code>python</code> qual a versão, pode ser que o Python 
-esteja na versão 2, se estiver, o comando <code>python3</code> deve executar a versão 3
-. Isto acontece pois sistemas linux vem com as duas versões instaladas, e
-pode ser que a versão padrão (comando <code>python</code>) seja a versão 2.</p>
-<p>Ao usar o comando <code>python</code> um <code>prompt</code> será aberto para que comandos python 
-sejam executados. Também será mostrado a versão do python. Esse <code>prompt</code> 
-também chamados de <strong>interpretador</strong> do Python. É uma forma de executar 
-comandos rápidos em Python e ver a resposta desses comandos, assim como os 
-comandos do <code>shell/bash</code> do linux.</p>
-<div class="codehilite"><pre><span></span>$ python
-Python <span class="m">2</span>.7.13 <span class="o">(</span>default, Sep <span class="m">26</span> <span class="m">2018</span>, <span class="m">18</span>:42:22<span class="o">)</span>
-...
+                  <h1>FOR</h1>
+                
+                <div class="codehilite"><pre><span></span><span class="c1"># For simples.</span>
+
+<span class="n">elementos</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">elementos</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">elemento</span><span class="p">)</span>
+
+<span class="n">a</span>
+<span class="n">b</span>
+<span class="n">c</span>
+<span class="n">d</span>
 </pre></div>
 
-<div class="codehilite"><pre><span></span>$ python3
-Python <span class="m">3</span>.7.2 <span class="o">(</span>default, Feb <span class="m">27</span> <span class="m">2019</span>, <span class="m">16</span>:03:03<span class="o">)</span> 
-...
+<div class="codehilite"><pre><span></span><span class="c1"># For com a funcao range().</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="mi">0</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
 </pre></div>
 
-<p>Lembre-se de usar sempre o <code>python</code> na versão 3, mesmo que tenha que usar o 
-comando <code>python3</code>.</p>
-<h2 id="executando-seus-arquivospy">Executando seus <code>arquivos.py</code></h2>
-<p>Basta usar o comando <code>python arquivo.py</code> que seu programa será executado.</p>
-<h2 id="sugestoes-de-ides-integrated-development-environments">Sugestões de IDEs (Integrated Development Environments)</h2>
-<ul>
-<li><a href="https://atom.io/">Atom</a></li>
-<li><a href="https://www.jetbrains.com/pycharm/">Pycharm</a></li>
-<li><a href="https://www.vim.org/">VIM</a></li>
-</ul>
+<div class="codehilite"><pre><span></span><span class="c1"># For aninhado.</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="n">m</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;i, j: &#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="c1"># print(f&#39;i, j: {i}, {j}&#39;)</span>
+
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span>
+</pre></div>
+
+<div class="codehilite"><pre><span></span><span class="c1"># For com &quot;IF&quot;.</span>
+
+<span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span>  <span class="c1"># n = 4 e m = 6</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">j</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s1">&#39;i, j: &#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="c1"># print(f&#39;i, j: {i}, {j}&#39;)</span>
+
+
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
+<span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span>
+</pre></div>
+
+<div class="codehilite"><pre><span></span><span class="c1"># Elementos &quot;enumerados&quot; usando a funcao &quot;enumerate()&quot;.</span>
+<span class="c1"># Similar a usar &quot;range()&quot;.</span>
+
+<span class="n">elementos</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">elementos</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Elemento {i}: {elemento}&#39;</span><span class="p">)</span>
+
+<span class="n">Elemento</span> <span class="mi">0</span><span class="p">:</span> <span class="n">a</span>
+<span class="n">Elemento</span> <span class="mi">1</span><span class="p">:</span> <span class="n">b</span>
+<span class="n">Elemento</span> <span class="mi">2</span><span class="p">:</span> <span class="n">c</span>
+<span class="n">Elemento</span> <span class="mi">3</span><span class="p">:</span> <span class="n">d</span>
+
+<span class="c1"># Elementos iniciando em 1.</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">elementos</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Elemento {i}: {elemento}&#39;</span><span class="p">)</span>
+
+<span class="n">Elemento</span> <span class="mi">1</span><span class="p">:</span> <span class="n">a</span>
+<span class="n">Elemento</span> <span class="mi">2</span><span class="p">:</span> <span class="n">b</span>
+<span class="n">Elemento</span> <span class="mi">3</span><span class="p">:</span> <span class="n">c</span>
+<span class="n">Elemento</span> <span class="mi">4</span><span class="p">:</span> <span class="n">d</span>
+</pre></div>
                 
                   
                 
@@ -424,7 +394,7 @@ comando <code>python3</code>.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Introdução" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../exercicios2/" title="Exercícios 2" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -433,25 +403,11 @@ comando <code>python3</code>.</p>
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Introdução
+                Exercícios 2
               </span>
             </div>
           </a>
         
-        
-          <a href="../aula1/" title="Aula 1 (2019-04-05)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Próximo
-                </span>
-                Aula 1 (2019-04-05)
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
