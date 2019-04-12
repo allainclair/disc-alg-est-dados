@@ -14,9 +14,9 @@
 * **Site:** [https://allainclair.github.io/disc-alg-est-dados/](
   https://allainclair.github.io/disc-alg-est-dados/)
 
-* **Local:** D67, "210". sexta 203, segunda?
+* **Local:** D67, "210". sexta 203, segunda 203.
 
-* **Contato de turma:**?
+* **Contato de turma:** eng.prod.agro1@gmail.com
 
 
 ## Avaliação (projeto)
@@ -73,13 +73,13 @@ dos Grafos. Desenvolver implementações em uma linguagem de alto nível.
     2.4 Algoritmos básicos de gerenciamento
 
 3. Árvores
-    
+
     3.1. Árvores binárias
-    
+
     3.2. Árvores de pesquisa
-    
+
     3.3. Árvores AVL
-    
+
     3.4. Alguns algoritmos básicos de travessia e gerenciamento
 
 4. Tabelas e métodos de busca
@@ -94,12 +94,12 @@ dos Grafos. Desenvolver implementações em uma linguagem de alto nível.
 
 5. Classificação e métodos de busca
 
-    5.1 Classificação por inserção (direta e método dos incrementos 
+    5.1 Classificação por inserção (direta e método dos incrementos
         decrescentes)
 
     5.2 Classificação por troca (método da bolha e método de troca e partição)
 
-    5.3 Classificação por seleção (método de seleção direta e método de 
+    5.3 Classificação por seleção (método de seleção direta e método de
         seleção em árvore)
 
     5.4 Classificação por distribuição
@@ -108,10 +108,10 @@ dos Grafos. Desenvolver implementações em uma linguagem de alto nível.
 
 6. Introdução à Teoria dos Grafos
 
-    6.1 Histórico e apresentação de problemas com solução através da Teoria 
+    6.1 Histórico e apresentação de problemas com solução através da Teoria
         dos Grafos.
 
-    6.2 Definições, elementos básicos e representação gráfica (nó, arco, 
+    6.2 Definições, elementos básicos e representação gráfica (nó, arco,
         rotulação, subgrafos, tipos de grafo, operações sobre grafos).
 
     6.3 Representações computacionais.
@@ -126,23 +126,23 @@ dos Grafos. Desenvolver implementações em uma linguagem de alto nível.
 * CELES, W.; CERQUEIRA, R.; NETTO, J.L.R. Introdução às estruturas de dados.
   Rio de Janeiro: Editora Campus, 2004;
 
-* **CORMEN, T.H.; LEISERSON,C.E.; STEIN, C.; RIVEST, R.L. Algoritmos: Teoria e 
+* **CORMEN, T.H.; LEISERSON,C.E.; STEIN, C.; RIVEST, R.L. Algoritmos: Teoria e
   Prática. Terceira Edição. Editora Campus, 2011;**
 
-* FOLK, M. J.; ZOELLICK, B. File Structures. Second Edition. Addison-Wesley, 
+* FOLK, M. J.; ZOELLICK, B. File Structures. Second Edition. Addison-Wesley,
   1992;
 
-* FORBELLONE, A. L. V.; EBERSPÄCHER, H. F. Lógica de programação: a 
+* FORBELLONE, A. L. V.; EBERSPÄCHER, H. F. Lógica de programação: a
   construção de algoritmos e estruturas de dados. 3a ed. São Paulo:
   Prentice-Hall, 2005;
 
-* GUIMARÃES, A.M.; LAGES, N.A.C. Algoritmos e estruturas de dados. Rio de 
+* GUIMARÃES, A.M.; LAGES, N.A.C. Algoritmos e estruturas de dados. Rio de
   Janeiro: LTC – Livros Técnicos e Científicos Editora S.A., 1994;
 
-* HOROWITZ, E. E.; SAHNI, S. Fundamentos de Estruturas de Dados, Editora 
+* HOROWITZ, E. E.; SAHNI, S. Fundamentos de Estruturas de Dados, Editora
 Campus, 1987;
 
-* LOPES, A.; GARCIA, G. Introdução à programação: 500 Algoritmos Resolvidos. 
+* LOPES, A.; GARCIA, G. Introdução à programação: 500 Algoritmos Resolvidos.
 Rio de Janeiro: Elsevier, 2006;
 
 * PREISS, B. R. Estruturas de dados e algoritmos. Editora Campus, 2001.
@@ -156,7 +156,7 @@ edição. Rio de Janeiro: LTC – Livros Técnicos e Científicos Editora S.A., 
 São Paulo: MAKRON Books, 1995;
 
 * VELOSO, Paulo. Estruturas de dados. 2a Edição. Rio de Janeiro: Campus, 1984.
-WIRTH, N. Algoritmos e estruturas de dados. 2a edição. Rio de Janeiro: 
+WIRTH, N. Algoritmos e estruturas de dados. 2a edição. Rio de Janeiro:
 Editora Prentice-Hall do Brasil Ltda., 1989.
 
 ## Cronograma
