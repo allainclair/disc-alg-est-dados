@@ -23,6 +23,5 @@ def find1(list_, element):
         return list_.index(element)
 
 
-
 if __name__ == '__main__':
     main()
