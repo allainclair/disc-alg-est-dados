@@ -131,3 +131,6 @@ Endereço  Dado
 100008    '9'
 100009    '10'
 ```
+
+
+## [Alocação estática x dinâmica de memória](https://pt.wikipedia.org/wiki/Aloca%C3%A7%C3%A3o_de_mem%C3%B3ria)
