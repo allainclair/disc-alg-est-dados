@@ -14,7 +14,7 @@
 * **Site:** [https://allainclair.github.io/disc-alg-est-dados/](
   https://allainclair.github.io/disc-alg-est-dados/)
 
-* **Local:** D67, "210". sexta 203, segunda 203.
+* **Local:** D67, 210.
 
 * **Contato de turma:** eng.prod.agro1@gmail.com
 
