@@ -1,5 +1,20 @@
 # arquivo binsearch.py
 
+
+def recursive_fact(n):
+    if n > 0:
+        print('n:', n)
+        print('n-1:', n - 1)
+        print('Chamada recursiva...')
+        ret = n * recursive_fact(n - 1)
+        print('Retorno da recursao:', ret)
+        return ret
+    else:
+        print('n:', n)
+        print('Retorno nao recursivo, retorna 1')
+        return 1
+
+
 def soma(list_, i):
     n = len(list_)
     print('Tamanho da lista', n)
@@ -25,3 +40,11 @@ def recursive_exp(n, exp, i=0):
     else:
         print('Retorno nao recursivo, retorna 1')
         return 1
+
+
+if __name__ == '__main__':
+    print('Fatorial recursivo')
+    n = 3
+    print('Fatorial de:', n)
+    print(recursive_fact(n))
+

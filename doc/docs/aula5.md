@@ -1,5 +1,9 @@
 ## Recursão
 
+![recursion](../images/po_royal.jpg)
+
+![recursion](../images/boneca-russa.jpg)
+
 * Função chama ela própria no seu escopo;
 
 * Para isso é necessário uma "condição base";
@@ -16,6 +20,8 @@
 * exponencial;
 
 * fatorial.
+
+![recursion](../images/recursion.svg)
 
 
 ## Pesquisa sequencial
