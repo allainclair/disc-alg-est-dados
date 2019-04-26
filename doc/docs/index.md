@@ -12,7 +12,8 @@
 ## Disciplina
 
 * **Site:** [https://allainclair.github.io/disc-alg-est-dados/](
-  https://allainclair.github.io/disc-alg-est-dados/)
+  https://allainclair.github.io/disc-alg-est-dados/);
+* https://github.com/allainclair/disc-alg-est-dados repositório.
 
 * **Local:** D67, 210.
 

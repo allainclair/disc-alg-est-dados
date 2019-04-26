@@ -1,7 +1,7 @@
 ## Exercício: encontrar posição de um elemento em um vetor **
 
 Dado uma `lista` (vetor) e um `elemento` como entrada para uma função chamda
-de `find`, retorne a posição do elemento encontrado; caso não seja 
+de `find`, retorne a posição do elemento encontrado; caso não seja
 encontrado retorne `None` (nulo).
 
 ```Python tab=
@@ -10,7 +10,7 @@ def find(list_, element)
 
 ### Pesquisa sequencial
 
-Dado um elemento, e uma lista, encontre o elemento dentro da lista sem usar 
+Dado um elemento, e uma lista, encontre o elemento dentro da lista sem usar
 o operado `in`.
 
 ## Pesquisa binária
@@ -33,10 +33,10 @@ print(vetor[0])
 ```
 
 ```C tab=
-/* Aqui alocamos um vetor de inteiros com 10 elementos, sendo eles todo 
+/* Aqui alocamos um vetor de inteiros com 10 elementos, sendo eles todo
 *  o intervalo [1, 10].
 *  Indicies comecam em 0.
-*/ 
+*/
 int vetor[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 printf("%d", vetor[0]);
 1
@@ -64,7 +64,7 @@ def meu_append(vetor, novo_elemento):
 vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 meu_append(vetor, novo_elemento)
 vetor
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] 
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 ```
 
@@ -106,7 +106,7 @@ print(vetor[2])
 
 #### Armazenamento: **
 
-Memória RAM, registradores do processador (CPU), dispositivo de 
+Memória RAM, registradores do processador (CPU), dispositivo de
 armazenamento secundário (HDDs, SSDs, etc).
 
 ##### Memória RAM **
@@ -131,6 +131,3 @@ Endereço  Dado
 100008    '9'
 100009    '10'
 ```
-
-
-## [Alocação estática x dinâmica de memória](https://pt.wikipedia.org/wiki/Aloca%C3%A7%C3%A3o_de_mem%C3%B3ria)
