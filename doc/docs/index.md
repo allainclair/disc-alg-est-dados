@@ -179,9 +179,9 @@ Editora Prentice-Hall do Brasil Ltda., 1989.
 
 2019-04-15 Conceitos básicos
 
-2019-04-19 Listas
+2019-04-19 Conceitos básicos
 
-2019-04-22 Listas
+2019-04-22 Conceitos básicos
 
 2019-04-26 Listas
 

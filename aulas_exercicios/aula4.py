@@ -5,7 +5,7 @@ def main():
     # element = 1.0
     # element = 'joao'
     list_ = [1, 0, 2, 1, 2, 1, 1]  # 8
-    print(soma(list_, i=0))
+    print(recursive_sum(list_))
     # return_ = find1(list_, element)
     # print('Find encontrou na posicao?', return_)
     # print(find([1, 2, 3, 4], 3))
@@ -42,15 +42,15 @@ def find1(list_, element):
         return list_.index(element)
 
 
-def soma(list_, i):
+def recursive_sum(list_, i=0):
     n = len(list_)
     print('Tamanho da lista', n)
     print('i', i)
     if i < n:
         print('list_[i]', list_[i])
-        print('Chamada recursiva')
-        ret = list_[i] + soma(list_, i + 1)
-        print('retorno da recursao', ret)
+        print('Chamada recursiva...')
+        ret = list_[i] + recursive_sum(list_, i + 1)
+        print('Retorno da recursao i =', i, 'retorno:', ret)
         return ret
     else:
         print('Chamada nao recursiva, retorna 0')
