@@ -15,7 +15,8 @@
   https://allainclair.github.io/disc-alg-est-dados/);
 * https://github.com/allainclair/disc-alg-est-dados repositório.
 
-* **Local:** D67, 210.
+* **Local:**  D67  210. sex 15:20
+* **Hora:** ter 13:30 sex 15:20
 
 * **Contato de turma:** eng.prod.agro1@gmail.com
 
