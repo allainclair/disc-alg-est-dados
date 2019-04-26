@@ -394,6 +394,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../aula5/" title="Aula 5 (2019-04-26)" class="md-nav__link">
+      Aula 5 (2019-04-26)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../exercicios1/" title="Exercícios 1" class="md-nav__link">
       Exercícios 1
     </a>
@@ -408,6 +420,18 @@
   <li class="md-nav__item">
     <a href="../exercicios2/" title="Exercícios 2" class="md-nav__link">
       Exercícios 2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../exercicios3/" title="Exercícios 3" class="md-nav__link">
+      Exercícios 3
     </a>
   </li>
 
@@ -584,7 +608,7 @@
                 
                 <h2 id="exercicio-encontrar-posicao-de-um-elemento-em-um-vetor">Exercício: encontrar posição de um elemento em um vetor **</h2>
 <p>Dado uma <code>lista</code> (vetor) e um <code>elemento</code> como entrada para uma função chamda
-de <code>find</code>, retorne a posição do elemento encontrado; caso não seja 
+de <code>find</code>, retorne a posição do elemento encontrado; caso não seja
 encontrado retorne <code>None</code> (nulo).</p>
 <div class="superfences-tabs">
 <input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
@@ -593,7 +617,7 @@ encontrado retorne <code>None</code> (nulo).</p>
 </pre></div></div>
 </div>
 <h3 id="pesquisa-sequencial">Pesquisa sequencial</h3>
-<p>Dado um elemento, e uma lista, encontre o elemento dentro da lista sem usar 
+<p>Dado um elemento, e uma lista, encontre o elemento dentro da lista sem usar
 o operado <code>in</code>.</p>
 <h2 id="pesquisa-binaria">Pesquisa binária</h2>
 <ul>
@@ -614,10 +638,10 @@ o operado <code>in</code>.</p>
 </pre></div></div>
 <input name="__tabs_2" type="radio" id="__tab_2_1" />
 <label for="__tab_2_1">C</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="cm">/* Aqui alocamos um vetor de inteiros com 10 elementos, sendo eles todo </span>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="cm">/* Aqui alocamos um vetor de inteiros com 10 elementos, sendo eles todo</span>
 <span class="cm">*  o intervalo [1, 10].</span>
 <span class="cm">*  Indicies comecam em 0.</span>
-<span class="cm">*/</span> 
+<span class="cm">*/</span>
 <span class="kt">int</span> <span class="n">vetor</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">};</span>
 <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span> <span class="n">vetor</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
 <span class="mi">1</span>
@@ -643,7 +667,7 @@ o operado <code>in</code>.</p>
 <span class="n">vetor</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
 <span class="n">meu_append</span><span class="p">(</span><span class="n">vetor</span><span class="p">,</span> <span class="n">novo_elemento</span><span class="p">)</span>
 <span class="n">vetor</span>
-<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span> 
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
 </pre></div></div>
 </div>
 <h5 id="atualizar">Atualizar *</h5>
@@ -685,7 +709,7 @@ o operado <code>in</code>.</p>
 </pre></div></div>
 </div>
 <h4 id="armazenamento">Armazenamento: **</h4>
-<p>Memória RAM, registradores do processador (CPU), dispositivo de 
+<p>Memória RAM, registradores do processador (CPU), dispositivo de
 armazenamento secundário (HDDs, SSDs, etc).</p>
 <h5 id="memoria-ram">Memória RAM **</h5>
 <p>Um vetor de caracteres armazenados em memória RAM.</p>
@@ -741,13 +765,13 @@ Endereço  Dado
           </a>
         
         
-          <a href="../exercicios1/" title="Exercícios 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../aula5/" title="Aula 5 (2019-04-26)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Próximo
                 </span>
-                Exercícios 1
+                Aula 5 (2019-04-26)
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
