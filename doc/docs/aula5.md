@@ -24,6 +24,8 @@
 ![recursion](../images/recursion.svg)
 
 
+Precisaremos do funções recursivas para os próximos algoritmos do semestre.
+
 ## Pesquisa sequencial
 
 Dado um elemento, e uma lista, encontre o elemento dentro dessa lista e retorne
