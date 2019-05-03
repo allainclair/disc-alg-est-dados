@@ -6,13 +6,12 @@ retorne os elementos repetidos desse elemento na lista.
 
 ## 3.2
 
-Gere a sequência Fibonacci em uma lista de maneira recursiva. Ou seja, faça uma
-função que retorne uma lista com uma sequência de Fibonacci, *n* é o parâmetro
-de entrada que nos da o tamanho da lista de Fiboniacci.
+Retorno o elemento n da sequência Fibonacci. Ou seja, faça uma
+função que retorne o n-ésimo termo da sequência de Fibonacci.
 
 ```Python tab=
 def fib(n):
-    RETORNE A LISTA
+    RETORNE O ELEMENTO N
 ```
 
 ## 3.3
