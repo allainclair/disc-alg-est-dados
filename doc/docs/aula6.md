@@ -3,13 +3,22 @@
 Dado um elemento, e uma lista, encontre o elemento dentro dessa lista e retorne
 vedadeiro se encontrar; falso caso contrário.
 
+Ex: Implementar tipo o método "count()". Ou seja, contar quantas vezes o elemento "element" está na lista "list_".
+
+```Python tab=
+def count(list_, element):
+    return "count"
+```
+
 ## Pesquisa binária
 
 * Requisito: lista ordenada;
 
-* Alogritmo iterativo;
+* Algoritmo iterativo;
 
 * Algoritmo recursivo.
+
+Implementar o "count()" usando pesquisa binária. Lembrando que para usar a pesquisa binária a lista precisa estar ordenada.
 
 ## Pesquisa através de cálculo de endereço
 
