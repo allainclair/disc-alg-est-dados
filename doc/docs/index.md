@@ -1,9 +1,10 @@
 # Disciplina Algoritmos e Estrutura de Dados
 
-## Aviso
+## Avisos
 
+* [Trabalho 1](trabalho1.md);
 * Devido ao meu exame médico admissional ter sido marcado para hoje a tarde
-  (2019-04-29). Não teremos aula. Aconselho fazer os exercícios das listas!
+  (2019-04-29). Não teremos aula. Aconselho fazer os exercícios das listas.
 
 ## Professor
 

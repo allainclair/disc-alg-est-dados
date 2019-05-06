@@ -19,7 +19,7 @@ população do país B, mantidas as taxas de crescimento.
 
 ### 2.3.1
 
-Altere o programa anterior (2.3) permitindo ao usuário informar as 
+Altere o programa anterior (2.3) permitindo ao usuário informar as
 populações e as taxas de crescimento iniciais. Valide a entrada e permita repetir
 a operação.
 
@@ -30,18 +30,18 @@ Depois modifique o programa para que ele mostre os números um ao lado do outro.
 
 ## 2.5
 
-Faça um programa que leia 5 números (usando estruturas de repetição) e 
+Faça um programa que leia 5 números (usando estruturas de repetição) e
 informe o maior número.
 
 ## 2.6
 
-Implemente o método "reverse()" da lista (`list.reverse()`). Defina uma 
+Implemente o método "reverse()" da lista (`list.reverse()`). Defina uma
 função chamada inverter.
 
 ### 2.6.1
 
-Caso tenha feito o "reverse()" com lista auxiliar (uma nova lista para 
-ajudar você resolver o problema), tente fazer o *reverse* sem criar listas 
+Caso tenha feito o "reverse()" com lista auxiliar (uma nova lista para
+ajudar você resolver o problema), tente fazer o *reverse* sem criar listas
 auxiliares para economizar memória RAM.
 
 ## 2.7
@@ -77,7 +77,7 @@ Faça um programa para imprimir:
     .....
     n   n   n   n   n   n  ... n
 ```
-Para um ** *n* ** informado pelo usuário. Use uma função que receba um valor n 
+Para um ** *n* ** informado pelo usuário. Use uma função que receba um valor n
 inteiro e imprima até a n-ésima linha.
 
 ## 2.9
@@ -90,7 +90,7 @@ Faça um programa para imprimir:
     .....
     1   2   3   ...  n
 ```
-Para um ** *n* ** informado pelo usuário. Use uma função que receba um valor n 
+Para um ** *n* ** informado pelo usuário. Use uma função que receba um valor n
 inteiro e imprima até a n-ésima linha.
 
 ## 2.10
@@ -113,7 +113,6 @@ inteiro informado.
 Faça um Programa que peça a idade e a altura de 5 pessoas, armazene cada informação
 no seu respectivo vetor. Imprima a idade e a altura na ordem inversa a ordem lida.
 
-## 2.14
 
 ## Fontes
 

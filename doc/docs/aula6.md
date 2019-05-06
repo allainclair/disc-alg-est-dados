@@ -36,5 +36,3 @@ Implementar o "count()" usando pesquisa binária. Lembrando que para usar a pesq
   retorna o elemento quando ele é buscado;
 
 * Dicionário d = {1: 10, 2: 5, 'joao': [1, 2, 3]}.
-
-## [Alocação estática x dinâmica de memória](https://pt.wikipedia.org/wiki/Aloca%C3%A7%C3%A3o_de_mem%C3%B3ria)
