@@ -92,10 +92,3 @@ Exercício
 
 * O usuário pode pedir para mostrar toda a lista de telefones e nomes.
 
-# Listas circulares "estáticas"
-
-# Listas ligadas dinâmicas
-
-## Listas duplamente ligadas
-
-# Listas circulares dinâmicas
