@@ -47,24 +47,25 @@ elementos da lista ligada.
 
 ![linked-list](../images/list/linked-list.svg)
 
-#### Listas ligadas estáticas
+Geralmente são implementadas de forma dinâmica e não contígua.
 
-Usa-se estruturas de dados "comuns" estáticas como vetores. No Python usamos
-o a estrutura lista (*list*).
+![lista-dinamica](../images/list/lista-dinamica.svg)
 
-#### Listas ligadas dinâmicas
-
-Usa-se "registros recursivos" (estrutura de dado recursiva) para ligar os nós
+Usa-se registros com campos que apontam para outros registros para ligar os nós
 da lista. 
 
-#### Listas duplamente ligadas (dinâmicas)
+Registro (ou classe) com campos "valor e próximo".
+
+![linked-list-reg](../images/list/linked-list-reg.svg)
+
+### Listas duplamente ligadas (dinâmicas)
 
 Na estrutura de dado nó, adicionamos outro apontador para o elemento anterior.
+
+![doubled-linked-list](../images/list/doubled-linked-list.svg)
 
 ## Listas circulares
 
 ![circular-list](../images/list/circular-list.svg)
 
-### Listas circulares "estáticas"
-
-### Listas circulares dinâmicas duplamente ligadas
+### Listas circulares dinâmicas ligadas
