@@ -1,5 +1,6 @@
 class List:
     def __init__(self):
+        # "Variavel global" dentro no escopo/contexto da classe."
         self.first_node = None
 
     def __str__(self):
@@ -7,7 +8,7 @@ class List:
         node = self.first_node
         string = ''
         while node is not None:
-            string += f'{node.value} '
+            string += f'{node.value}, '  # string = string + f'{node.value} '
             node = node.next
         return string
 
@@ -16,8 +17,8 @@ class List:
         node = self.first_node
         size = 0
         while node is not None:
-            node = node.next
             size += 1
+            node = node.next
         return size
 
     def add_sorted(self, value):
@@ -61,7 +62,7 @@ class List:
         TODO Exercicio: Adicionar apenas elementos nao repetidos
         """
         new_node = Node(value)  # Cria-se novo node.
-
+        # if self.first_node is not None:  # Se a lista nao eh vazia.
         if not self.empty():  # Se a lista nao eh vazia.
             # Var auxiliar para nao perder referencia do primeiro node.
             node = self.first_node
@@ -72,14 +73,18 @@ class List:
             # Quando o "node" auxiliar esta com "node.next == None"
             # atribuimos a "node.next" o novo node.
             node.next = new_node
+            # new_node.next = None
         else:  # Se a lista esta vazia, o novo node eh o primeiro node.
             self.first_node = new_node
 
     def addat_start(self, value):
-        """Adiciona ao comeco da lista ligada."""
+        """Adiciona "value" ao comeco da lista ligada."""
         new_node = Node(value)
         new_node.next = self.first_node  # Novo node ja aponta para o primeiro.
         self.first_node = new_node  # Primeiro node se torna o novo node.
+
+    def empty(self):
+        return self.first_node is None  # self.first_node == None
 
     def remove(self, value):
         """Return true if the value was found and removed; otherwise False."""
@@ -101,14 +106,11 @@ class List:
             del node_to_del
         self.first_node = None
 
-    def empty(self):
-        return self.first_node is None  # self.first_node == None
-
     def print_(self):
         aux_node = self.first_node
         # while aux_node != None:
         while aux_node is not None:
-            print(aux_node.value, end=' '),
+            print(aux_node.value, end=', '),
             aux_node = aux_node.next
 
 
@@ -159,13 +161,16 @@ def addat_end_tests():
 def addat_start_tests():
     print('Addat start tests')
     list_ = List()  # Nova lista.
-    list_.addat_start(1)
-    list_.addat_start(2)
-    list_.addat_start(3)
-    list_.addat_start(4)
-    list_.addat_start(5)
+    # list_.addat_start(2)
+    # list_.addat_start(3)
+    # list_.addat_start(5)
+    # list_.addat_start(1)
+    for i in range(100):
+        list_.addat_start(i)
+    # list_.print_()
     print(list_)
-    print(len(list_))
+    # list_.len_()
+    print('len(list_)', len(list_))
     print()
 
 
