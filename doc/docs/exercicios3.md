@@ -22,3 +22,23 @@ sum_digits(345) = 12
 sum_digits(45) = 9
 
 Caso queira, faça a versão iterativa primeiro.
+
+## 3.4
+
+* Dada duas listas, uma contendo **nomes**, e outra contendo **números de
+  telefone**. Mantenha a lista consistente ao usar as operações de adicionar, ler,
+  modificar e excluir;
+
+* Para isso um usuário da aplicação pode adicionar nomes e números de telefones
+  respectivos. Ou seja, adiciona-se primeiro um nome de pessoa para depois adicionar
+  um numero dessa pessoa;
+
+* O usuário pode buscar (ler) por nome o número da pessoa, e também pode buscar
+  por telefone o nome da pessoa;
+
+* Pode modificar e excluir também por nome ou número;
+
+* Caso não encontre nome/número, mensagens devem indicar esses problemas ao   
+  usuário da aplicação;
+
+* O usuário pode pedir para mostrar toda a lista de telefones e nomes.
