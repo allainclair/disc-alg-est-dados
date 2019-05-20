@@ -33,14 +33,21 @@ def imprimir_lista(lista):
 def adicionar_ordenado(lista, valor):
     if lista is not None:
         prox = lista
-        ant = lista
+        ant = None
         while prox.value <= valor:
             ant = prox
             prox = prox.next
 
         novo = Node(valor)
-        ant.next = novo
-        novo.next = prox
+        if ant is not None:
+            ant.next = novo
+            novo.next = prox
+        else:
+            novo.next = prox
+            lista = novo
+
+
+
 
 
 def adicionar_no_fim(lista, valor):
@@ -64,12 +71,12 @@ if __name__ == '__main__':
     lista = criar_lista(100)
     imprimir_lista(lista)
 
-    adicionar_no_fim(lista, 10)
-    print()
+    adicionar_ordenado(lista, 10)
+    # print()
     imprimir_lista(lista)
-    adicionar_no_fim(lista, 11)
-    print()
-    imprimir_lista(lista)
+    # adicionar_no_fim(lista, 11)
+    # print()
+    # imprimir_lista(lista)
 
 
     # print('lista.value', lista.value)
