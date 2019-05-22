@@ -91,8 +91,10 @@ class List:
         node = self.first_node
         while node.next is not None:
             if node.next.value == value:
+                print('node.next.value', node.next.value)
                 node.next = node.next.next
-                del node.next
+                print('node.next.next.value', node.next.next.value)
+                # del node.next
                 return True
             node = node.next
         return False
@@ -165,13 +167,17 @@ def addat_start_tests():
     # list_.addat_start(3)
     # list_.addat_start(5)
     # list_.addat_start(1)
-    for i in range(100):
+    for i in range(5):
         list_.addat_start(i)
     # list_.print_()
     print(list_)
     # list_.len_()
     print('len(list_)', len(list_))
     print()
+    list_.remove(2)
+    # print(list_)
+    list_.print_()
+
 
 
 if __name__ == '__main__':
