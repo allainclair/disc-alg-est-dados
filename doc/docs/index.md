@@ -2,9 +2,11 @@
 
 ## Avisos
 
-* [Trabalho 1](trabalho1.md);
-* Devido ao meu exame médico admissional ter sido marcado para hoje a tarde
-  (2019-04-29). Não teremos aula. Aconselho fazer os exercícios das listas.
+### [Trabalho 1](trabalho1.md) - 2019-00-00 23:59:59 - horário de recebimento;
+
+### Prova 1 - 2019-00-00 - 00:00h - 00:00h - Até lista ligada;
+
+### [Instalando Python](LEIAME.md#instalando-python).
 
 ## Professor
 

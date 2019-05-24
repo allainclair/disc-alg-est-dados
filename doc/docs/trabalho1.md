@@ -16,6 +16,11 @@
 
 ### Lista duplamente ligada
 
-Implementar as quatro operações de lista duplamente ligadas:
+Implementar operações de **lista duplamente ligadas**:
 
-Inserir (início, fim e ordenado), remover, alterar e atualizar apenas.
+Inserir (início, fim), remover, alterar, buscar e um método de "print_()"
+
+* Inserir não precisa retornar nada;
+* Remover retorna `True` ou `False`;
+* Alterar retorna `True` ou `False`;
+* Buscar retorna posição ou `False`.

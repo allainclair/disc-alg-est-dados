@@ -51,4 +51,5 @@ da função: uma iterativa e uma recursiva.
 
 ## Fonte:
 
-https://www.ime.usp.br/~pf/algoritmos/aulas/lista.html
+[https://www.ime.usp.br/~pf/algoritmos/aulas/lista.html](
+https://www.ime.usp.br/~pf/algoritmos/aulas/lista.html)

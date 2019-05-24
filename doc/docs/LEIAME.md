@@ -37,4 +37,8 @@ Basta usar o comando `python arquivo.py` que seu programa será executado.
 
 * [Atom](https://atom.io/)
 * [Pycharm](https://www.jetbrains.com/pycharm/)
-* [VIM](https://www.vim.org/)
+
+## Instalando Python
+
+[Installing Python](
+https://realpython.com/courses/installing-python-windows-macos-linux/)
