@@ -78,6 +78,7 @@ class List:
     def remove(self, value):
         """Return true if the value was found and removed; otherwise False."""
         # Se a lista nao estiver vazia, procura-se value para remover.
+        # TODO exercicio remover TODOS os valores (value) na lista
         if not self.empty():
             # Unico caso em que temos que atualizar o primeiro node, eh quando
             # o primeiro node precisa ser removido.
@@ -85,27 +86,44 @@ class List:
                 node = self.first_node  # Primeiro node de remocao eh armazenado.
                 # Atualiza-se o primeiro node para o proximo.
                 self.first_node = self.first_node.next
+                del node.value
+                del node.next
                 del node  # Remove-se o node em questao.
+
+                # node = self.first_node.next
+                # del self.first_node.value
+                # del self.first_node.next
+                # self.first_node = node
+
                 return True
             else:
                 prev_node = self.first_node  # Node anterior precisa ser salvo.
                 node = prev_node.next  # Node auxiliar para checagem.
+                # node = self.first_node.next  # Alternativa a linha anterior.
+                # found = False
                 while node is not None:  # Enquanto nao chegar ao fim da lista.
                     if node.value == value:  # Se encontrar o valor.
                         # Node anterior aponta para o proximo do node a ser removido.
                         prev_node.next = node.next
+                        del node.value
+                        del node.next
                         del node  # Exclui-se o node auxiliar.
-                        return True  # Retorna para parar de andar na lista
+                        # return True  # Retorna para parar de andar na lista
+                        # found = True
+                        return True
                     # Percorre-se a lista atualizado os dois nodes.
                     prev_node = node
                     # prevo_node = prev_node.next
                     node = node.next
+        # return found
         return False
 
     def remove_first(self, value):
         if self.first_node.value == value:
             node = self.first_node
             self.first_node = self.first_node.next
+            del node.value
+            del node.next
             del node
             return True
         else:
@@ -137,6 +155,8 @@ class List:
         while node is not None:
             if node.value == value:
                 prev_node.next = node.next
+                del node.value
+                del node.next
                 del node
                 return True
             prev_node = node
@@ -163,6 +183,8 @@ class List:
         while node.next is not None:
             node_to_del = node
             node = node.next
+            node_to_del.value
+            node_to_del.next
             del node_to_del
         self.first_node = None
 
@@ -187,8 +209,9 @@ def main():
     # addat_start_tests()
     # addat_end_tests()
     # search_tests()
-    # reset_tests()
-    update_tests()
+    reset_tests()
+    # removing_tests()
+    # update_tests()
 
 
 def addat_end_tests():
@@ -230,6 +253,8 @@ def removing_tests():
     list_.addat_start(1)
     list_.addat_start(2)
     list_.addat_start(3)
+    list_.addat_start(4)
+    list_.addat_start(4)
     list_.addat_start(4)
     list_.addat_start(5)
     list_.addat_start(6)

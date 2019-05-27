@@ -2,9 +2,9 @@
 
 ## Avisos
 
-### [Trabalho 1](trabalho1.md) - 2019-00-00 23:59:59 - horário de recebimento;
+### [Trabalho 1](trabalho1.md) - 2019-06-12 23:59:59 - horário de recebimento;
 
-### Prova 1 - 2019-00-00 - 00:00h - 00:00h - Até lista ligada;
+### Prova 1 - 2019-06-10 - 13:30h - 15:10h - Até lista ligada;
 
 ### [Instalando Python](LEIAME.md#instalando-python).
 
