@@ -25,6 +25,12 @@ Inserir (início, fim), remover, alterar, buscar e um método de "print_()"
 * Alterar retorna `True` ou `False`;
 * Buscar retorna posição ou `False`.
 
+### Entrega
+
+* Arquivos .py: agregar por lista de exercícios, ou até cada exercício um arquivo;
+
+* Compactar arquivos .py em .zip;
+
 * Enviar para **afsantos2@uem.br** com título (assunto): **AED 7526 T31 - Nome1 RA1 - Nome2 RA2**;
 
 * Até 2 membros.
