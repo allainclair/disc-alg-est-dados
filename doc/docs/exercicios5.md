@@ -86,8 +86,6 @@ através do menu abaixo, identifique qual a tarefa a ser executada:
 
 ## 5.10
 
-Exercício:
-
 Implemente um programa que contemple uma fila de contatos para um call center. As
 opções do programa devem ser:
 
@@ -113,3 +111,6 @@ http://www.decom.ufop.br/menotti/edI101/listas/lista-Fila.pdf)
 
 [http://www.inf.ufrgs.br/~galante/wiki/lib/exe/fetch.php?id=inf01203&cache=cache&media=filas.pdf](
 http://www.inf.ufrgs.br/~galante/wiki/lib/exe/fetch.php?id=inf01203&cache=cache&media=filas.pdf)
+
+[http://docente.ifsc.edu.br/vilson.junior/ed/04_Listas_Filas_Pilhas.pdf](
+http://docente.ifsc.edu.br/vilson.junior/ed/04_Listas_Filas_Pilhas.pdf)

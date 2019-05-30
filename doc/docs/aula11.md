@@ -28,10 +28,4 @@ seja consumido toda a lista que representa a operação completa.
 **Dica:** usar função "eval" do Python para validar as expressões em formato de
 string.
 
-### Fila (*Queue*)
 
-* Primeiro a entrar é primeiro a sair (*First in First out: FIFO*);
-
-* Duas operações básicas: "enfileirar" e "desinfileirar" (*enqueue* e *dequeue*).
-
-![remocoes](../images/stack-queue/queue.svg)
