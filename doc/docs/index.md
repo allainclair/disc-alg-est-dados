@@ -94,7 +94,7 @@ dos Grafos. Desenvolver implementações em uma linguagem de alto nível.
 
 4. Tabelas e métodos de busca
 
-    4.1 Pesquisa seqüencial
+    4.1 Pesquisa sequencial
 
     4.2 Pesquisa binária
 
