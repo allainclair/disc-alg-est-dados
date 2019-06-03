@@ -1,4 +1,4 @@
-## Aula de exercícios dia 2019-06-04 (sexta)
+## Aula de exercícios dia 2019-06-07 (sexta)
 
 Tragam exercícios.
 
@@ -68,4 +68,3 @@ Para inserir um nó na ABB basta seguir as regras acima
 * **IN**order: esquerda, raiz, direita;
 * **PRE**order: raiz, esquerda, direita;
 * **POST**order: esquerda, direita, raiz.
-
