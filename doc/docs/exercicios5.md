@@ -96,6 +96,32 @@ seus dados na tela para o usuário efetuar o contato com o cliente;
 
 * Sair.
 
+## 5.11
+
+Dado os delimitadores de expressão `(), [] e {}`. Verifique se esses delimitadores
+de expressão estão corretos dada uma expressão. Exemplos:
+
+`{[x * (a + b)]^10}`: correto
+
+`{[x * (a + b)^10}`: incorreto
+
+`{}`: correto
+
+: vazio assumidos como correto
+
+`}{`: incorreto
+
+`()]`: incorreto
+
+`{([10 + 20] * 2)^10}`: incorreto devido a ordem (colchete antes de parêteses)
+
+Em um primeiro passo (passo 1) verificamos apenas se os delimitadores abrem e fecham,
+em um segundo passo (passo 2) podemos ver se a ordem está correta, ou seja, se
+primeiro usa-se parênteses, depois colchetes e por último chaves.
+
+**Dica:** use uma pilha.
+
+
 
 ## Referências
 

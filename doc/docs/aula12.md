@@ -61,7 +61,7 @@ Dado um nó N da árvore:
 
 [arvore](../images/arvore/bin-search-tree.svg)
 
-Para inserir um nó na ABB basta seguir as regras acima
+Para inserir um nó na ABB basta seguir as regras acima.
 
 ### Travessia em árvores
 
