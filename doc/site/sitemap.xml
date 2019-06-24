@@ -71,7 +71,12 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/allainclair/aula12/</loc>
+     <loc>https://github.com/allainclair/aula13/</loc>
+     <lastmod>2019-06-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/allainclair/aula14/</loc>
      <lastmod>2019-06-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -97,6 +102,11 @@
     </url>
     <url>
      <loc>https://github.com/allainclair/exercicios5/</loc>
+     <lastmod>2019-06-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/allainclair/exercicios6/</loc>
      <lastmod>2019-06-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
