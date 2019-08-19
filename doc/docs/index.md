@@ -2,7 +2,9 @@
 
 ## Avisos
 
-### [Trabalho 1](trabalho1.md) - 2019-06-12 23:59:59 - horário de recebimento;
+### [Trabalho 2](trabalho2.md) - Entrega: 2019-09-08 23:59:59 - horário de recebimento;
+
+### [Trabalho 1](trabalho1.md) - Entrega: 2019-06-12 23:59:59 - horário de recebimento;
 
 ### Prova 1 - 2019-06-10 - 13:30h - 15:10h - Até lista ligada;
 

@@ -13,7 +13,7 @@
         <meta name="description" content="Disciplina algoritmos e estruturas de dados">
       
       
-        <link rel="canonical" href="https://github.com/allainclair/aula7/">
+        <link rel="canonical" href="https://github.com/allainclair/aula15/">
       
       
         <meta name="author" content="Allainclair Flausino dos Santos">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Aula 7 (2019-05-06) - Algoritmos e estruturas de dados</title>
+        <title>Aula 15 (2019-06-24) - Algoritmos e estruturas de dados</title>
       
     
     
@@ -81,7 +81,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#alocacao-estatica-x-dinamica-de-memoria" tabindex="1" class="md-skip">
+      <a href="#remocao-em-abb" tabindex="1" class="md-skip">
         Ir para o conteúdo
       </a>
     
@@ -106,7 +106,7 @@
               Algoritmos e estruturas de dados
             </span>
             <span class="md-header-nav__topic">
-              Aula 7 (2019-05-06)
+              Aula 15 (2019-06-24)
             </span>
           
         </div>
@@ -268,92 +268,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Aula 7 (2019-05-06)
-      </label>
-    
-    <a href="./" title="Aula 7 (2019-05-06)" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../aula7/" title="Aula 7 (2019-05-06)" class="md-nav__link">
       Aula 7 (2019-05-06)
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Índice</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#alocacao-estatica-x-dinamica-de-memoria" title="Alocação estática x dinâmica de memória" class="md-nav__link">
-    Alocação estática x dinâmica de memória
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lista" title="Lista" class="md-nav__link">
-    Lista
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#implementacao" title="Implementação" class="md-nav__link">
-    Implementação
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#estatica" title="Estática" class="md-nav__link">
-    Estática
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dinamica" title="Dinâmica" class="md-nav__link">
-    Dinâmica
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operacoes-em-qualquer-lista" title="Operações em qualquer lista" class="md-nav__link">
-    Operações em qualquer lista
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -445,11 +364,92 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../aula15/" title="Aula 15 (2019-06-24)" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Aula 15 (2019-06-24)
+      </label>
+    
+    <a href="./" title="Aula 15 (2019-06-24)" class="md-nav__link md-nav__link--active">
       Aula 15 (2019-06-24)
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#remocao-em-abb" title="Remoção em ABB" class="md-nav__link">
+    Remoção em ABB
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo" title="Exemplo" class="md-nav__link">
+    Exemplo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arovre-avl-adelson-velsky-and-landis" title="Árovre AVL (Adelson-Velsky and Landis)" class="md-nav__link">
+    Árovre AVL (Adelson-Velsky and Landis)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propriedade" title="Propriedade" class="md-nav__link">
+    Propriedade
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplos-balanceamento" title="Exemplos balanceamento" class="md-nav__link">
+    Exemplos balanceamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balanceamento" title="Balanceamento" class="md-nav__link">
+    Balanceamento
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -568,44 +568,17 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#alocacao-estatica-x-dinamica-de-memoria" title="Alocação estática x dinâmica de memória" class="md-nav__link">
-    Alocação estática x dinâmica de memória
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lista" title="Lista" class="md-nav__link">
-    Lista
+  <a href="#remocao-em-abb" title="Remoção em ABB" class="md-nav__link">
+    Remoção em ABB
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#implementacao" title="Implementação" class="md-nav__link">
-    Implementação
+  <a href="#exemplo" title="Exemplo" class="md-nav__link">
+    Exemplo
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#estatica" title="Estática" class="md-nav__link">
-    Estática
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dinamica" title="Dinâmica" class="md-nav__link">
-    Dinâmica
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -615,9 +588,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#operacoes-em-qualquer-lista" title="Operações em qualquer lista" class="md-nav__link">
-    Operações em qualquer lista
+  <a href="#arovre-avl-adelson-velsky-and-landis" title="Árovre AVL (Adelson-Velsky and Landis)" class="md-nav__link">
+    Árovre AVL (Adelson-Velsky and Landis)
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propriedade" title="Propriedade" class="md-nav__link">
+    Propriedade
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplos-balanceamento" title="Exemplos balanceamento" class="md-nav__link">
+    Exemplos balanceamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balanceamento" title="Balanceamento" class="md-nav__link">
+    Balanceamento
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -638,104 +638,82 @@
               
                 
                 
-                  <h1>Aula 7 (2019-05-06)</h1>
+                  <h1>Aula 15 (2019-06-24)</h1>
                 
-                <h2 id="alocacao-estatica-x-dinamica-de-memoria"><a href="https://pt.wikipedia.org/wiki/Aloca%C3%A7%C3%A3o_de_mem%C3%B3ria">Alocação estática x dinâmica de memória</a></h2>
-<h2 id="lista">Lista</h2>
-<ul>
-<li>[1, 1, 2, 3, 5, 8, 11, 21, 34, 55];</li>
-<li>['joao', 'maria', 'jose'];</li>
-<li>[1.0, 2.1, 'maria', 10, 'joao'].</li>
-</ul>
-<h3 id="implementacao">Implementação</h3>
-<p>Formas de implementar listas.</p>
-<h4 id="estatica">Estática</h4>
-<p>A lista é previamente criada, logo seu tamanho é definido logo no começo.</p>
-<p><img alt="lista-estatica" src="../images/list/lista-estatica.svg" /></p>
-<div class="superfences-tabs">
-<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
-<label for="__tab_1_0">Python</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">SIZE</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">SIZE</span>
-<span class="n">lista</span>
-<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
-<span class="n">lista</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">lista</span>
-<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
-<span class="n">lista</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">lista</span>
-<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
-</pre></div></div>
-</div>
-<h4 id="dinamica">Dinâmica</h4>
-<p>A lista pode ser iniciada sem elementos, e seu tamanho pode aumentar e diminuir
-de acordo com a vontade do usuário da lista.</p>
-<p>A lista dinâmica mais conhecida é a <strong>lista ligada</strong>.</p>
-<p><img alt="lista-dinamica" src="../images/list/lista-dinamica.svg" /></p>
-<div class="superfences-tabs">
-<input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
-<label for="__tab_2_0">Python</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">lista</span>
-<span class="p">[]</span>
-<span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="n">lista</span>
-<span class="p">[</span><span class="mi">10</span><span class="p">]</span>
-<span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
-<span class="n">lista</span>
-<span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
-<span class="n">lista</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
-<span class="n">lista</span>
-<span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
-</pre></div></div>
-</div>
-<h2 id="operacoes-em-qualquer-lista">Operações em qualquer lista</h2>
-<ul>
-<li>Criar lista;</li>
-<li>Adicionar;</li>
-<li>Ler;</li>
-<li>Modificar/Atualizar;</li>
-<li>Excluir;</li>
-<li>Excluir lista completa (usa-se o excluir).</li>
-</ul>
-<div class="superfences-tabs">
-<input name="__tabs_3" type="radio" id="__tab_3_0" checked="checked" />
-<label for="__tab_3_0">Python</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">list_</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Criar.</span>
-<span class="n">list_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># Adicionar ao final.</span>
-<span class="n">list_</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>  <span class="c1"># Adicionar 10 no indice 0.</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">list_</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Ler.</span>
-<span class="n">list_</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>   <span class="c1"># Atualizar.</span>
-<span class="k">del</span> <span class="n">list_</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Excluir/Deletar pelo indice.</span>
-<span class="n">list_</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># Excluir/Deletar valor.</span>
-<span class="k">del</span> <span class="n">list_</span>  <span class="c1"># Excluir lista completa.</span>
-</pre></div></div>
-</div>
-<p>Exercício</p>
+                <h2 id="remocao-em-abb">Remoção em ABB</h2>
 <ul>
 <li>
-<p>Dada duas listas, uma contendo <strong>nomes</strong>, e outra contendo <strong>números de
-  telefone</strong>. Mantenha a lista consistente ao usar as operações de adicionar, ler, modificar e excluir;</p>
+<p>Remoção de nó folha;</p>
 </li>
 <li>
-<p>Para isso um usuário da aplicação pode adicionar nomes e números de telefones
-  respectivos. Ou seja, adiciona-se primeiro um nome de pessoa para depois adicionar um numero dessa pessoa;</p>
+<p>Remoção de nó com filhos:</p>
+<ul>
+<li>
+<p>Se tiver apenas um filho. Coloca-se o filho no lugar;</p>
 </li>
 <li>
-<p>O usuário pode buscar (ler) por nome o número da pessoa, e também pode buscar
-  por telefone o nome da pessoa;</p>
-</li>
-<li>
-<p>Pode modificar e excluir também por nome ou número;</p>
-</li>
-<li>
-<p>Caso não encontre nome/número, mensagens devem indicar esses problemas ao <br />
-  usuário da aplicação;</p>
-</li>
-<li>
-<p>O usuário pode pedir para mostrar toda a lista de telefones e nomes.</p>
+<p>Com nós que tem dois filhos: troca-se pelo imediatamente maior ou pelo
+  imediatamente menor.</p>
 </li>
 </ul>
+</li>
+</ul>
+<h3 id="exemplo">Exemplo</h3>
+<p><img alt="remocao" src="../images/arvore/remocao.svg" /></p>
+<h2 id="arovre-avl-adelson-velsky-and-landis">Árovre AVL (<strong>A</strong>delson-<strong>V</strong>elsky and <strong>L</strong>andis)</h2>
+<ul>
+<li>
+<p>Uma árvore binária que tem por objetivo manter a árvore balanceada. Ou seja,
+  que não tenham desníveis exagerados;</p>
+</li>
+<li>
+<p>Quando a diferença de nível das sub-árvores (esquerda e direita) de um dado nó<br />
+  for maior do que 1, é necessário rotacionar.</p>
+</li>
+</ul>
+<h2 id="propriedade">Propriedade</h2>
+<p>Para cada nó da Árvore AVL, suas sub-árvores (esquerda e direita) tem uma
+diferença de níveis de no máximo 1.</p>
+<ul>
+<li>
+<p>A = conjunto de nós da árvore;</p>
+</li>
+<li>
+<p>h(x) = altura de um nó x;</p>
+</li>
+<li>
+<p>fesq(x) = filho à esquerda de x;</p>
+</li>
+<li>
+<p>fdir(x) = filho à direita de x;</p>
+</li>
+<li>
+<p>∀x ∈ A, |h(fesq(x)) - h(fdir(x))| ≤ 1.</p>
+</li>
+</ul>
+<h3 id="exemplos-balanceamento">Exemplos balanceamento</h3>
+<p><img alt="remocao" src="../images/arvore/avl1.svg" /></p>
+<p>Balanceada</p>
+<p><img alt="remocao" src="../images/arvore/abb-nao-balanceada-1.svg" /></p>
+<p>Não balanceada</p>
+<h3 id="balanceamento">Balanceamento</h3>
+<p>Rotacionamento de árvore: rotação à direita e à esquerda.</p>
+<ul>
+<li>Rotação à direita:</li>
+</ul>
+<p><img alt="left-case" src="../images/arvore/left-case.png" /></p>
+<ul>
+<li>Rotação à esquerda:</li>
+</ul>
+<p><img alt="right-case" src="../images/arvore/right-case.png" /></p>
+<ul>
+<li>Rotação dupla: esquera e direita:</li>
+</ul>
+<p><img alt="left-right-case" src="../images/arvore/left-right-case.png" /></p>
+<ul>
+<li>Rotação dupla: direita e esquerda:</li>
+</ul>
+<p><img alt="right-left-case" src="../images/arvore/right-left-case.png" /></p>
                 
                   
                 
@@ -756,7 +734,7 @@ de acordo com a vontade do usuário da lista.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../aula6/" title="Aula 6 (2019-05-03)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../aula14/" title="Aula 14 (2019-06-07)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -765,19 +743,19 @@ de acordo com a vontade do usuário da lista.</p>
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Aula 6 (2019-05-03)
+                Aula 14 (2019-06-07)
               </span>
             </div>
           </a>
         
         
-          <a href="../aula8/" title="Aula 8 (2019-05-17)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../exercicios1/" title="Exercícios 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Próximo
                 </span>
-                Aula 8 (2019-05-17)
+                Exercícios 1
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
