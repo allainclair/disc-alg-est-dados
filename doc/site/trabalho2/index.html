@@ -13,7 +13,7 @@
         <meta name="description" content="Disciplina algoritmos e estruturas de dados">
       
       
-        <link rel="canonical" href="https://github.com/allainclair/aula6/">
+        <link rel="canonical" href="https://github.com/allainclair/trabalho2/">
       
       
         <meta name="author" content="Allainclair Flausino dos Santos">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Aula 6 (2019-05-03) - Algoritmos e estruturas de dados</title>
+        <title>Trabalho 2 - Algoritmos e estruturas de dados</title>
       
     
     
@@ -81,7 +81,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#pesquisa-sequencial" tabindex="1" class="md-skip">
+      <a href="#implementar-deque" tabindex="1" class="md-skip">
         Ir para o conteúdo
       </a>
     
@@ -107,7 +107,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Aula 6 (2019-05-03)
+                Trabalho 2
               
             </span>
           
@@ -258,59 +258,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Aula 6 (2019-05-03)
-      </label>
-    
-    <a href="./" title="Aula 6 (2019-05-03)" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../aula6/" title="Aula 6 (2019-05-03)" class="md-nav__link">
       Aula 6 (2019-05-03)
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Índice</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pesquisa-sequencial" title="Pesquisa sequencial" class="md-nav__link">
-    Pesquisa sequencial
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pesquisa-binaria" title="Pesquisa binária" class="md-nav__link">
-    Pesquisa binária
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pesquisa-atraves-de-calculo-de-endereco" title="Pesquisa através de cálculo de endereço" class="md-nav__link">
-    Pesquisa através de cálculo de endereço
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -510,11 +462,65 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../trabalho2/" title="Trabalho 2" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Trabalho 2
+      </label>
+    
+    <a href="./" title="Trabalho 2" class="md-nav__link md-nav__link--active">
       Trabalho 2
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#implementar-deque" title="Implementar Deque" class="md-nav__link">
+    Implementar Deque
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-funcionamento-usando-collectionsdeque" title="Exemplo de funcionamento usando collections.deque" class="md-nav__link">
+    Exemplo de funcionamento usando collections.deque
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega" title="Entrega" class="md-nav__link">
+    Entrega
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -549,22 +555,28 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pesquisa-sequencial" title="Pesquisa sequencial" class="md-nav__link">
-    Pesquisa sequencial
+  <a href="#implementar-deque" title="Implementar Deque" class="md-nav__link">
+    Implementar Deque
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-funcionamento-usando-collectionsdeque" title="Exemplo de funcionamento usando collections.deque" class="md-nav__link">
+    Exemplo de funcionamento usando collections.deque
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pesquisa-binaria" title="Pesquisa binária" class="md-nav__link">
-    Pesquisa binária
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pesquisa-atraves-de-calculo-de-endereco" title="Pesquisa através de cálculo de endereço" class="md-nav__link">
-    Pesquisa através de cálculo de endereço
+  <a href="#entrega" title="Entrega" class="md-nav__link">
+    Entrega
   </a>
   
 </li>
@@ -586,54 +598,94 @@
               
                 
                 
-                  <h1>Aula 6 (2019-05-03)</h1>
+                  <h1>Trabalho 2</h1>
                 
-                <h2 id="pesquisa-sequencial">Pesquisa sequencial</h2>
-<p>Dado um elemento, e uma lista, encontre o elemento dentro dessa lista e retorne
-vedadeiro se encontrar; falso caso contrário.</p>
-<p>Ex: Implementar tipo o método "count()". Ou seja, contar quantas vezes o elemento "element" está na lista "list_".</p>
-<div class="superfences-tabs">
-<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
-<label for="__tab_1_0">Python</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="n">list_</span><span class="p">,</span> <span class="n">element</span><span class="p">):</span>
-    <span class="k">return</span> <span class="s2">&quot;count&quot;</span>
-</pre></div></div>
-</div>
-<h2 id="pesquisa-binaria">Pesquisa binária</h2>
+                <h2 id="implementar-deque">Implementar Deque</h2>
 <ul>
+<li>Filas (Queues) são estrutura de dados que respeitam a regra do primeiro elemento
+  a entrar é o primeiro a sair (FIFO);</li>
+<li>Fila de Duas Pontas (Double ended queue), como o nome diz, a fila tem duas
+  pontas: uma à direita e outra à esquerda;</li>
+<li>Para inserir e remover na ponta <strong>direita</strong> respectivamente: <code>dq.append(x); dq.pop();</code>
+  igual a fila comum.</li>
+<li>Para inserir e remover na ponta <strong>esquerda</strong> respectivamente:
+  <code>dq.appendleft(x); dq.popleft();</code></li>
 <li>
-<p>Requisito: lista ordenada;</p>
+<p><strong>O objetivo principal do trabalho é implementar uma Fila de Duas Pontas</strong>
+  (<code>class Deque</code>) com algumas restrições:</p>
+<ul>
+<li><strong>Apenas pilhas</strong> devem ser as estruturas de dados interna da <code>Deque</code> para
+  manipular os itens inseridos (<code>append</code>) e removidos (<code>pop</code>), logo é
+  necessário implementar a estrutura de dado "Pilha" (<code>Stack</code>). Use as pilhas
+  implementadas em sala de aula se achar necessário.</li>
+</ul>
 </li>
 <li>
-<p>Algoritmo iterativo;</p>
+<p>Caso a <em>Deque</em> esteja vazia, <strong><code>False</code> deve ser retornado</strong>;</p>
 </li>
 <li>
-<p>Algoritmo recursivo.</p>
+<p><strong>Nenhum módulo</strong> (<code>import</code>) pode ser usado para o o trabalho, incluindo o módulo
+  <code>collections</code> que serve de exemplo para mostrar como a Deque deve funcionar.</p>
 </li>
 </ul>
-<p>Implementar o "count()" usando pesquisa binária. Lembrando que para usar a pesquisa binária a lista precisa estar ordenada.</p>
-<h2 id="pesquisa-atraves-de-calculo-de-endereco">Pesquisa através de cálculo de endereço</h2>
+<h3 id="exemplo-de-funcionamento-usando-collectionsdeque">Exemplo de funcionamento usando <code>collections.deque</code></h3>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">collections</span>
+<span class="n">dq</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">deque</span><span class="p">()</span>
+
+<span class="n">dq</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">dq</span>
+<span class="n">deque</span><span class="p">([</span><span class="mi">10</span><span class="p">])</span>
+
+<span class="n">dq</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">dq</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">dq</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">dq</span>
+<span class="n">deque</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+
+<span class="n">dq</span><span class="o">.</span><span class="n">appendleft</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">dq</span><span class="o">.</span><span class="n">appendleft</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+<span class="n">dq</span><span class="o">.</span><span class="n">appendleft</span><span class="p">(</span><span class="mi">70</span><span class="p">)</span>
+<span class="n">dq</span>
+<span class="n">deque</span><span class="p">([</span><span class="mi">70</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+
+<span class="n">dq</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="mi">5</span>
+<span class="n">dq</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="mi">30</span>
+
+<span class="n">dq</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+<span class="mi">70</span>
+<span class="n">dq</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+<span class="mi">60</span>
+<span class="n">dq</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+<span class="mi">50</span>
+<span class="n">dq</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+<span class="mi">10</span>
+<span class="n">dq</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>
+<span class="mi">20</span>
+
+<span class="n">dq</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>  <span class="c1"># Ao inves do erro, retorne False na sua implementacao</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s2">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">IndexError</span><span class="p">:</span> <span class="n">pop</span> <span class="kn">from</span> <span class="nn">an</span> <span class="nn">empty</span> <span class="nn">deque</span>
+</pre></div>
+
+<h2 id="entrega">Entrega</h2>
 <ul>
 <li>
-<p>Hash;</p>
+<p>Entrega: 2019-09-08 23:59:59 - horário de recebimento;</p>
 </li>
 <li>
-<p>f(elemento) -&gt; endereço.</p>
+<p>Entregar arquivo (anexo) <strong><code>main.py</code></strong> com <strong>classe <code>Deque</code></strong> implementa;</p>
 </li>
 <li>
-<p>Adicionamos esse elemento no endereço, e buscamos esse elemento por meio
-  novamente de f(elemento);</p>
+<p>Enviar para <strong>afsantos2@uem.br</strong> com título (assunto): <strong>T2 AED 7526 T31 - Nome1 RA1 - Nome2 RA2</strong>;</p>
 </li>
 <li>
-<p>Para inserir e para buscar o elmenento as operação são em tempo constante
-  ("1 acesso");</p>
+<p>Até 2 membros;</p>
 </li>
 <li>
-<p>Existe um mapeamento do elemento para um número (um endereço), e esse endereço nos
-  retorna o elemento quando ele é buscado;</p>
-</li>
-<li>
-<p>Dicionário d = {1: 10, 2: 5, 'joao': [1, 2, 3]}.</p>
+<p>Cada dia de atraso desconta-se 10% da nota do trabalho total.</p>
 </li>
 </ul>
                 
@@ -656,7 +708,7 @@ vedadeiro se encontrar; falso caso contrário.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../aula5/" title="Aula 5 (2019-04-26)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../trabalho1/" title="Trabalho 1" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -665,19 +717,19 @@ vedadeiro se encontrar; falso caso contrário.</p>
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Aula 5 (2019-04-26)
+                Trabalho 1
               </span>
             </div>
           </a>
         
         
-          <a href="../aula7/" title="Aula 7 (2019-05-06)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../for/" title="FOR" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Próximo
                 </span>
-                Aula 7 (2019-05-06)
+                FOR
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -67,9 +67,9 @@ IndexError: pop from an empty deque
 
 ## Entrega
 
-* Entrega: 2019-09-08 23:59:59 - horário de recebimento;
+* Entrega: 2019-08-30 23:59:59 - horário de recebimento;
 
-* Entregar arquivo (anexo) **`main.py`** com **classe `Deque`** implementa;
+* Entregar arquivo (anexo) **`main.py`** com **classe `Deque`** implementada;
 
 * Enviar para **afsantos2@uem.br** com título (assunto): **T2 AED 7526 T31 - Nome1 RA1 - Nome2 RA2**;
 
