@@ -35,32 +35,39 @@ def test_simple():
     assert dq.append(20) is None  # Append 20 e nao retorna nada.
     assert dq.append(30) is None  # ...
     assert dq.append(40) is None
+    print(dq.dq)
 
     assert dq.pop() == 40  # Pop retorna 40 (pop tira da direita)
     assert dq.pop() == 30  # ...
     assert dq.pop() == 20
     assert dq.pop() == 10
+    print(dq.dq)
 
     assert dq.pop() is False  # Deque vazia.
     assert dq.pop() is False  # ...
 
     assert dq.appendleft(40) is None
     assert dq.appendleft(50) is None
+    print(dq.dq)
 
     assert dq.popleft() == 50
 
     assert dq.append(100) is None
     assert dq.append(200) is None
+    print(dq.dq)
 
     assert dq.popleft() == 40
     assert dq.pop() == 200
+    print(dq.dq)
 
     assert dq.appendleft(300) is None
+    print(dq.dq)
 
     assert dq.pop() == 100
     assert dq.pop() == 300
     assert dq.pop() is False  # Deque vazia.
     assert dq.popleft() is False  # Deque vazia.
+    print(dq.dq)
 
 
 def test_random():
