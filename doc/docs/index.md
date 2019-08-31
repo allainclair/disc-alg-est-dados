@@ -2,7 +2,9 @@
 
 ## Avisos
 
-### [Trabalho 2](trabalho2.md) - Entrega: 2019-09-08 23:59:59 - horário de recebimento;
+### Prova 2 - 2019-08-30 - 15:20h - 17:00h - Até métodos de ordenação;
+
+### [Trabalho 2](trabalho2.md) - Entrega: 2019-08-30 23:59:59 - horário de recebimento;
 
 ### [Trabalho 1](trabalho1.md) - Entrega: 2019-06-12 23:59:59 - horário de recebimento;
 
