@@ -3,30 +3,47 @@ import collections  # NAO USE ESSE MODULO, EH APENAS PARA EXEMPLO
 
 NUM_ELEMENTS = 1000
 
-
-class Deque:
-    """NAO USE ESSA CLASSE, SOBRESCREVA ELA: faca sua propria implementacao
-    de Deque. Eu irei copiar esse seu trecho (Classe Deque) de codigo para
-    dentro dos meus testes.
-    """
+class Stack:
     def __init__(self):
-        # Fila que pode tem "duas pontas" para exemplificar
-        self.dq = collections.deque()
+        self.list_ = []
 
-    def append(self, element):
-        self.dq.append(element)
-
-    def appendleft(self, element):
-        self.dq.appendleft(element)
+    def push(self, value):
+        self.list_.append(value)
 
     def pop(self):
-        """Retorna elemento da esquerda da direita (False se vazia)."""
-        return self.dq.pop() if len(self.dq) > 0 else False
+        return self.list_.pop()
+
+
+class Deque:
+    def __init__(self):
+        self.pilha = Stack()
+        self.aux = Stack()
+
+    def append(self, element):
+        self.pilha.push(element)
+
+    def appendleft(self, element):
+        while len(self.pilha.list_) != 0:
+            self.aux.push(self.pilha.pop())
+        self.aux.push(element)
+        while len(self.aux.list_) != 0:
+            self.pilha.push(self.aux.pop())
+
+    def pop(self):
+        if len(self.pilha.list_) == 0:
+            return False
+        else:
+            return self.pilha.pop()
 
     def popleft(self):
-        """Retorna elemento da esquerda da esquerda (False se vazia)."""
-        return self.dq.popleft() if len(self.dq) > 0 else False
-
+        if len(self.pilha.list_) == 0:
+            return False
+        else:
+            while len(self.pilha.list_) > 0:
+                self.aux.push(self.pilha.pop())
+            saida = self.aux.pop()
+            while len(self.aux.list_) > 0:
+                self.pilha.push(self.aux.pop())
 
 def test_simple():
     dq = Deque()  # Fila que tem "duas pontas"
@@ -35,39 +52,32 @@ def test_simple():
     assert dq.append(20) is None  # Append 20 e nao retorna nada.
     assert dq.append(30) is None  # ...
     assert dq.append(40) is None
-    print(dq.dq)
 
     assert dq.pop() == 40  # Pop retorna 40 (pop tira da direita)
     assert dq.pop() == 30  # ...
     assert dq.pop() == 20
     assert dq.pop() == 10
-    print(dq.dq)
 
     assert dq.pop() is False  # Deque vazia.
     assert dq.pop() is False  # ...
 
     assert dq.appendleft(40) is None
     assert dq.appendleft(50) is None
-    print(dq.dq)
 
     assert dq.popleft() == 50
 
     assert dq.append(100) is None
     assert dq.append(200) is None
-    print(dq.dq)
 
     assert dq.popleft() == 40
     assert dq.pop() == 200
-    print(dq.dq)
 
     assert dq.appendleft(300) is None
-    print(dq.dq)
 
     assert dq.pop() == 100
     assert dq.pop() == 300
     assert dq.pop() is False  # Deque vazia.
     assert dq.popleft() is False  # Deque vazia.
-    print(dq.dq)
 
 
 def test_random():
