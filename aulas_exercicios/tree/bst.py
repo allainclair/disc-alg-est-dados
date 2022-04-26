@@ -175,14 +175,16 @@ class BST(object):
 def main():
 	# for i in range(10):
 	bst = BST()
-	elements = random.sample(range(0, 100), 12)
+	# elements = random.sample(range(0, 100), 12)
+	elements = [42, 20, 80, 10, 86, 70, 62, 32]
 	for element in elements:
 		bst.insert(element)
 	print('elements:', elements)
 	print('in', bst.inorder())
 	print('pre', bst.preorder())
 	print('post', bst.postorder())
-	to_remove = random.sample(elements, 6)
+	# to_remove = random.sample(elements, 6)
+	to_remove = [42, 80, 10]
 	print()
 	# print('elements', elements)
 	print('to_remove', to_remove)
